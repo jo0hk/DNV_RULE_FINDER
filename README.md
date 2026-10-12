@@ -11,7 +11,10 @@
 > `Dockerfile`, Pages 워크플로, `web/config.js`를 넣고, 서버에 다른 주소 허용(CORS), LLM 답변 하루 상한,
 > 원문 PDF가 없을 때 `Open PDF` 숨김을 추가함. `requirements.txt`의 버전을 고정함.
 
-**데모: https://jo0hk.github.io/DNV_RAG/** (서버가 쉬고 있었다면 첫 검색은 1분 가까이 걸릴 수 있습니다)
+> 개정 2026-10-13 (2): 저장소 이름이 `DNV_RULE_FINDER`로 바뀌어 데모 주소를 고침.
+> `.env.example`을 없애고, `.env`에 적을 내용을 실행 방법에 직접 적음.
+
+**데모: https://jo0hk.github.io/DNV_RULE_FINDER/** (서버가 쉬고 있었다면 첫 검색은 1분 가까이 걸릴 수 있습니다)
 
 도면 수정 사항이나 문제 사항을 영어 문장으로 입력하면, DNV 선급 규정에서
 관련 조항을 찾아 답변 + 근거 조항·페이지를 영어로 출력합니다.
@@ -29,7 +32,7 @@
 | `ask.py` | 터미널용: 영어 문장 입력 → 답변 + 출처 출력 |
 | `llm.py` | LLM API 호출 (Claude / GPT / Gemini 중 키가 있는 것 사용) |
 | `config.py` | 경로, 임베딩 모델, 검색 개수 등 설정 |
-| `.env` | API 키를 적는 곳 (`.env.example`을 복사해서 만듦, git에는 올리지 않음) |
+| `.env` | API 키를 적는 곳 (직접 만듦, git에는 올리지 않음) |
 
 DNV 규정 PDF와 `chroma_db`(규정 원문이 들어 있음)는 저장소에 포함하지 않습니다.
 PDF는 이 폴더와 같은 위치의 `DNV` 폴더에 두거나, `.env`의 `DOCS_DIR`로 위치를 지정합니다.
@@ -42,10 +45,24 @@ VS Code에서 이 `dnv_rag` 폴더를 열고, 터미널에서 순서대로 실�
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
-copy .env.example .env
 ```
 
-`.env`를 열어 API 키를 하나 넣습니다. 넣지 않으면 LLM 답변 없이 검색된 발췌문만 보여 줍니다.
+이 폴더에 `.env` 파일을 만들고 LLM API 키를 하나 적습니다. 셋 중 하나만 있으면 되고,
+넣지 않으면 LLM 답변 없이 검색된 발췌문만 보여 줍니다.
+
+```
+ANTHROPIC_API_KEY=
+OPENAI_API_KEY=
+GEMINI_API_KEY=
+```
+
+필요하면 같은 파일에 아래 값도 적을 수 있습니다.
+
+| 이름 | 뜻 |
+|---|---|
+| `LLM_PROVIDER` | 키를 여러 개 넣었을 때 쓸 회사 (`anthropic` / `openai` / `gemini`) |
+| `LLM_MODEL` | 모델 이름. 없으면 `llm.py`의 기본 모델 |
+| `DOCS_DIR` | DNV 규정 PDF가 있는 폴더. 없으면 이 폴더와 같은 위치의 `DNV` 폴더 |
 
 ```powershell
 python ingest.py
@@ -78,7 +95,7 @@ python ask.py
 화면은 GitHub Pages에, 서버는 Google Cloud Run에 올립니다. 서버는 안 쓸 때 꺼져 있다가 첫 요청에 켜집니다.
 
 ```
-https://jo0hk.github.io/DNV_RAG/  (web/ 폴더, GitHub Pages)
+https://jo0hk.github.io/DNV_RULE_FINDER/  (web/ 폴더, GitHub Pages)
         │  /api/search, /api/answer
         ▼
 Cloud Run 서버 (Dockerfile: server.py + 임베딩 모델 + chroma_db)
