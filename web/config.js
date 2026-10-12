@@ -5,6 +5,5 @@
  *   화면과 같은 주소로 요청을 보내므로 아무것도 적지 않아도 된다.
  *   GitHub Pages처럼 화면만 따로 올린 경우에는 아래 CLOUD_RUN_URL의 서버로 요청을 보낸다.
  */
-const CLOUD_RUN_URL = "https://dnv-rule-finder-1066639912167.asia-northeast1.run.app";   // gcloud run deploy가 알려 준 Service URL
-
+const CLOUD_RUN_URL = "https://dnv-rule-finder-1066639912167.asia-northeast1.run.app";  
 window.API_BASE = location.hostname.endsWith("github.io") ? CLOUD_RUN_URL : "";
