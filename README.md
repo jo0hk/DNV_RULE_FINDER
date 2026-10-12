@@ -3,18 +3,28 @@
 > 개정 2026-10-12: 영어 전용으로 변경. 한국어 입력을 영어 검색어로 바꾸던 단계를 없애고,
 > 한글이 들어간 문장은 받지 않도록 함. LLM 프롬프트, 답변, 화면 출력을 영어로 바꿈.
 > 시연용 예시 문장을 영어로 교체함.
+>
+> 개정 2026-10-12 (2): 웹 화면 추가. FastAPI 서버(`server.py`)와 화면(`web/`)을 넣고,
+> 검색·답변 코드를 `ask.py`에서 `rag.py`로 옮겨 터미널과 웹이 함께 쓰도록 함. `.env.example` 추가.
 
 도면 수정 사항이나 문제 사항을 영어 문장으로 입력하면, DNV 선급 규정에서
 관련 조항을 찾아 답변 + 근거 조항·페이지를 영어로 출력합니다.
 한글이 들어간 문장은 받지 않습니다 (`English only` 안내만 출력).
+웹 화면과 터미널 두 가지로 쓸 수 있습니다.
 
 | 파일 | 역할 |
 |---|---|
 | `ingest.py` | PDF → 조항 단위 chunk → 임베딩 → DB 저장 (처음 한 번만 실행) |
-| `ask.py` | 영어 문장 입력 → 검색 → LLM 답변 + 출처 출력 |
+| `rag.py` | 검색(벡터 + 키워드)과 LLM 답변 생성. 웹과 터미널이 함께 씀 |
+| `server.py` | 웹 서버: 화면(`web/`)과 API(`/api/search`, `/api/answer` 등)를 띄움 |
+| `web/` | 화면 (`index.html`, `style.css`, `app.js`). 빌드 과정 없이 그대로 열림 |
+| `ask.py` | 터미널용: 영어 문장 입력 → 답변 + 출처 출력 |
 | `llm.py` | LLM API 호출 (Claude / GPT / Gemini 중 키가 있는 것 사용) |
 | `config.py` | 경로, 임베딩 모델, 검색 개수 등 설정 |
-| `.env` | API 키를 적는 곳 |
+| `.env` | API 키를 적는 곳 (`.env.example`을 복사해서 만듦, git에는 올리지 않음) |
+
+DNV 규정 PDF와 `chroma_db`(규정 원문이 들어 있음)는 저장소에 포함하지 않습니다.
+PDF는 이 폴더와 같은 위치의 `DNV` 폴더에 두거나, `.env`의 `DOCS_DIR`로 위치를 지정합니다.
 
 ## 실행 방법
 
@@ -24,22 +34,45 @@ VS Code에서 이 `dnv_rag` 폴더를 열고, 터미널에서 순서대로 실�
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
+copy .env.example .env
 ```
 
+`.env`를 열어 API 키를 하나 넣습니다. 넣지 않으면 LLM 답변 없이 검색된 발췌문만 보여 줍니다.
+
 ```powershell
-python ingest.py    
-python ask.py     
+python ingest.py
+```
+
+웹 화면으로 쓰기 (브라우저에서 http://127.0.0.1:8000 을 엽니다. 모델을 불러오느라 서버가 뜨는 데 수십 초 걸립니다):
+
+```powershell
+uvicorn server:app --port 8000
+```
+
+터미널에서 쓰기:
+
+```powershell
+python ask.py
 ```
 
 `python ask.py "sentence"` 처럼 한 번만 물어볼 수도 있습니다.
-API 키를 넣지 않고 실행하면 LLM 답변 없이 검색된 발췌문만 보여 줍니다.
+
+## 웹 화면
+
+- 문장을 입력하면 출처 카드(조항 번호, 경로, Edition, 페이지, 발췌문)가 먼저 나오고, 이어서 LLM 답변이 나옵니다.
+- 답변의 `[1]` 같은 번호를 누르면 해당 출처 카드로 이동합니다.
+- 출처 카드의 `Open PDF`는 규정 원문 PDF를 해당 페이지에서 엽니다 (수식·그림 확인용).
+- 질문 기록은 브라우저에만 저장됩니다.
+- 서버는 이 컴퓨터(`127.0.0.1`)에서만 접속되게 띄웁니다. `Open PDF`가 규정 원문을 그대로 내보내므로
+  외부에 공개하는 서버로 쓰지 않습니다.
 
 ## 동작 원리
 
 ```
 [ingest.py]  PDF ─▶ 텍스트 추출 ─▶ 조항 단위 chunk ─▶ 임베딩 ─▶ Chroma DB
-[ask.py]     입력 문장(영어) ─▶ 벡터 검색 + 키워드 검색
+[rag.py]     입력 문장(영어) ─▶ 벡터 검색 + 키워드 검색
              ─▶ 순위 합치기(RRF) ─▶ 상위 6개 발췌문 + 문장을 LLM에 전달 ─▶ 답변 + 출처
+[server.py]  화면(web/) ◀─▶ /api/search (발췌문) , /api/answer (발췌문 + 답변) ◀─▶ rag.py
 ```
 
 1. 텍스트 추출 (PyMuPDF): 표지·목차·개정 이력 페이지와 바닥글·워터마크는 제외합니다.

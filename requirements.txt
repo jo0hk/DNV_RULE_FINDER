@@ -3,6 +3,8 @@ sentence-transformers
 chromadb
 rank-bm25
 python-dotenv
+fastapi
+uvicorn
 anthropic
 openai
 google-genai

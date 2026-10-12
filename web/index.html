@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#edf5fb">
+  <title>DNV Rule Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="boat" viewBox="0 0 24 24"><path d="M4 14h16l-3 5H7l-3-5Z M9 14V6h7v8 M12 6V3 M3 21q3-2 6 0t6 0t6 0" /></symbol>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" /></symbol>
+    <symbol id="shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z M8 12l3 3 5-6" /></symbol>
+    <symbol id="book" viewBox="0 0 24 24"><path d="M12 6v15M3 4q5-1 9 2 4-3 9-2v15q-5-1-9 2-4-3-9-2V4Z" /></symbol>
+    <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></symbol>
+  </svg>
+  <div class="app">
+    <aside class="sidebar">
+      <a class="brand" href="./" aria-label="DNV Rule Finder home">
+        <span class="mark"><svg class="icon" aria-hidden="true"><use href="#boat"/></svg></span>
+        <span class="brand-text"><strong>Rule Finder<span class="brand-dot">.</span></strong><small>YOUR RULES, NAVIGATED</small></span>
+      </a>
+      <button type="button" id="new-check" class="side-button"><span aria-hidden="true">＋</span> New check</button>
+      <nav class="history" aria-label="Recent checks">
+        <div class="history-head"><span><svg class="icon" aria-hidden="true"><use href="#clock"/></svg> Recent</span><button type="button" id="clear-history" hidden>Clear</button></div>
+        <ul id="history"></ul>
+        <div id="history-empty" class="history-empty">
+          <span class="empty-art" aria-hidden="true"><svg class="icon"><use href="#book"/></svg></span>
+          <small>Your recent checks will appear here.</small>
+        </div>
+      </nav>
+      <div class="side-note"></div>
+      <div class="server-label">SYSTEM STATUS</div>
+      <div class="status" id="status" role="status">
+        <span class="dot" aria-hidden="true"></span>
+        <div><div id="status-main">Connecting…</div><div id="status-sub" class="status-sub"></div></div>
+      </div>
+    </aside>
+    <main class="main">
+      <img class="workspace-background" src="background.png" alt="" aria-hidden="true">
+      <div class="workspace-bar"><span><svg class="icon" aria-hidden="true"><use href="#boat"/></svg> Structural design workspace</span><span class="rule-tag">DNV-RU-SHIP <span class="tag-dot"></span></span></div>
+      <div class="page" id="page">
+        <header class="hero">
+          <div class="mascot-scene">
+            <span class="bubble">Let’s check the rules!</span>
+            <svg class="mascot" viewBox="0 0 240 180" role="img" aria-label="A friendly little seal captain ready to help with your question">
+              <ellipse cx="119" cy="159" rx="75" ry="9" fill="#c6deef"/>
+              <path d="M43 133q-24-14-11-27 11-6 33 10m114 17q27-17 23-28-10-9-31 9" fill="#e9f5ff" stroke="#5288b7" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M61 128c-7-47 12-87 57-87s68 40 62 87q-1 32-58 32t-61-32Z" fill="#f9fcff" stroke="#5288b7" stroke-width="3"/>
+              <path d="M73 131q47 20 94 0" fill="none" stroke="#6199c9" stroke-width="10"/>
+              <path d="m111 143 10 17 10-17" fill="#3178b9"/>
+              <ellipse cx="89" cy="106" rx="11" ry="6" fill="#f4bcc2"/><ellipse cx="152" cy="106" rx="11" ry="6" fill="#f4bcc2"/>
+              <ellipse cx="97" cy="94" rx="4" ry="6" fill="#284e71"/><ellipse cx="145" cy="94" rx="4" ry="6" fill="#284e71"/>
+              <path d="M115 101q6-5 12 0l-6 5Z" fill="#284e71"/><path d="M121 106v5m-10-2q4 8 10 2 6 6 10-2" fill="none" stroke="#284e71" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="m80 106-16-3m16 8-15 3m94-8 16-3m-16 8 15 3" stroke="#5288b7" stroke-width="2" stroke-linecap="round"/>
+              <path d="M79 55q-13-13-2-22 8-7 27-4 15-16 30-1 23-3 31 7 8 9-4 20" fill="#fff" stroke="#5288b7" stroke-width="3"/>
+              <path d="M79 51q43-13 82 0v12q-42-9-82 0Z" fill="#347cba" stroke="#5288b7" stroke-width="2"/>
+              <path d="M121 32v12m-5-5h10m-12 2q0 9 7 9t7-9" fill="none" stroke="#347cba" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="m28 61 3-7 3 7 7 3-7 3-3 7-3-7-7-3Zm167 13 2-5 2 5 5 2-5 2-2 5-2-5-5-2Z" fill="#84b9df"/>
+              <path d="M45 155q10-7 20 0m106 0q10-7 20 0" fill="none" stroke="#92bcdb" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h1>One sentence in.<br><span>The right clause out.</span></h1>
+          <p>Tell me about a drawing change or a design concern.<br>I’ll find the relevant DNV rules, with sources you can trust and verify.</p>
+        </header>
+        <form class="composer" id="form">
+          <div class="composer-label"><span class="input-dot"></span><label for="question">What would you like to check?</label><span class="input-type">DRAWING CHANGE / ISSUE</span></div>
+          <textarea id="question" rows="3" maxlength="2000" autocomplete="off" spellcheck="true" placeholder="Describe your drawing change in one English sentence…"></textarea>
+          <div class="composer-foot"><button type="submit" id="submit" class="primary">Check rules</button></div>
+        </form>
+        <p class="notice" id="notice" role="alert" hidden></p>
+        <section class="examples" id="examples">
+          <div class="examples-head"><h2>Need a starting point?</h2><span>Try one of these examples</span></div>
+          <div class="example-list" id="example-list"></div>
+        </section>
+        <section class="result" id="result" hidden>
+          <div class="asked"><span>Checked</span><p id="asked"></p></div>
+          <div class="columns">
+            <article class="panel"><div class="panel-head"><h2><svg class="icon" aria-hidden="true"><use href="#boat"/></svg> Answer</h2><button type="button" id="copy" class="link" hidden>Copy</button></div><div class="answer" id="answer" aria-live="polite"></div></article>
+            <aside class="sources-col" aria-label="Sources"><div class="panel-head"><h2><svg class="icon" aria-hidden="true"><use href="#book"/></svg> Sources <small>Verify the original rules</small></h2><span class="count" id="source-count"></span></div><ol class="sources" id="sources"></ol></aside>
+          </div>
+        </section>
+        <footer class="foot"></footer>
+      </div>
+      <div class="ocean-footer" aria-hidden="true"><svg viewBox="0 0 1200 80" preserveAspectRatio="none"><path d="M0 35Q150 0 300 35T600 35T900 35T1200 35V80H0Z" fill="currentColor" opacity=".35"/><path d="M0 55Q150 20 300 55T600 55T900 55T1200 55V80H0Z" fill="currentColor" opacity=".4"/></svg></div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
