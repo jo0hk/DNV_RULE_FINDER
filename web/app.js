@@ -17,7 +17,12 @@ const EXAMPLES = [
   "Non-destructive testing omitted after weld repair of a copper alloy casting",
 ];
 
+// 서버 주소. 화면과 서버가 같은 주소면 빈 값이고, 화면만 따로 올렸으면 config.js에 적은 주소다
+const API_BASE = (window.API_BASE || "").replace(/\/+$/, "");
+
 let llm = null;          // 서버가 쓰는 LLM 이름. 없으면 검색 결과만 보여 준다
+let pdfAvailable = false;   // 서버에 원문 PDF가 있는지. 없으면 "Open PDF" 링크를 숨긴다
+let statusRequest = null;   // 진행 중이거나 성공한 /api/health 요청
 let controller = null;   // 진행 중인 요청. 새 문장을 보내면 취소한다
 let answerText = "";     // Copy 버튼이 복사할 답변 원문
 
@@ -29,7 +34,7 @@ async function api(path, body, signal) {
     : { signal };
   let response;
   try {
-    response = await fetch(path, options);
+    response = await fetch(API_BASE + path, options);
   } catch (error) {
     if (error.name === "AbortError") throw error;
     throw new Error("Cannot reach the server. Check that it is still running.");
@@ -117,7 +122,10 @@ function renderSources(sources) {
     const parts = source.path.split(" > ").map(escapeHtml);
     const leaf = parts.pop();
     const path = [...parts, `<b>${leaf}</b>`].join("<i>›</i>");
-    const href = `/api/pdf/${encodeURIComponent(source.file)}#page=${source.pdf_page}`;
+    const href = `${API_BASE}/api/pdf/${encodeURIComponent(source.file)}#page=${source.pdf_page}`;
+    const pdfLink = pdfAvailable
+      ? `<a class="link" href="${href}" target="_blank" rel="noopener" title="${escapeHtml(source.file)}">Open PDF</a>`
+      : "";
 
     const card = document.createElement("li");
     card.className = "source";
@@ -134,7 +142,7 @@ function renderSources(sources) {
       <div class="source-foot">
         <span class="meta">Edition ${escapeHtml(source.edition)} · p.${escapeHtml(source.page)}</span>
         <button type="button" class="link toggle">Show more</button>
-        <a class="link" href="${href}" target="_blank" rel="noopener" title="${escapeHtml(source.file)}">Open PDF</a>
+        ${pdfLink}
       </div>`;
     list.appendChild(card);
 
@@ -263,6 +271,10 @@ async function run(question) {
   $("answer").innerHTML = skeleton(6);
 
   try {
+    // 서버 상태(LLM 유무 등)를 아직 못 받았으면 먼저 기다린다. 쉬던 서버가 깨어나는 중일 수 있다
+    await ensureStatus();
+    if (mine.signal.aborted) return;
+
     // (1) 검색: 출처부터 보여 준다
     const found = await api("/api/search", { question }, mine.signal);
     renderSources(found.sources);
@@ -309,17 +321,41 @@ function submit(question) {
 // ---------- 처음 한 번 ----------
 async function loadStatus() {
   const status = $("status");
+  status.className = "status";
+  $("status-main").textContent = "Connecting…";
+  $("status-sub").textContent = "";
+  // 공개 서버는 안 쓸 때 꺼져 있다가 첫 요청에 켜지므로, 응답이 늦으면 깨우는 중이라고 알려 준다
+  const waking = setTimeout(() => {
+    $("status-main").textContent = "Waking up the server…";
+    $("status-sub").textContent = "This can take up to a minute.";
+  }, 4000);
   try {
     const health = await api("/api/health");
     llm = health.llm;
+    pdfAvailable = Boolean(health.pdf);
     $("status-main").textContent = `${health.chunks.toLocaleString("en-US")} chunks indexed`;
     $("status-sub").textContent = llm ? `LLM: ${llm}` : "Search only (no LLM API key)";
     status.className = `status ${llm ? "ok" : "warn"}`;
+    return true;
   } catch (error) {
     $("status-main").textContent = "Server not reachable";
     $("status-sub").textContent = "";
     status.className = "status err";
+    return false;
+  } finally {
+    clearTimeout(waking);
   }
+}
+
+/* 서버 상태를 한 번만 받아 온다. 실패했으면 다음에 부를 때 다시 시도한다 */
+function ensureStatus() {
+  if (!statusRequest) {
+    statusRequest = loadStatus().then((ok) => {
+      if (!ok) statusRequest = null;
+      return ok;
+    });
+  }
+  return statusRequest;
 }
 
 function init() {
@@ -374,7 +410,7 @@ function init() {
   }
 
   renderHistory(loadHistory());
-  loadStatus();
+  ensureStatus();
   $("question").focus();
 }
 

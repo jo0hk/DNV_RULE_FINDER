@@ -6,6 +6,12 @@
 >
 > 개정 2026-10-12 (2): 웹 화면 추가. FastAPI 서버(`server.py`)와 화면(`web/`)을 넣고,
 > 검색·답변 코드를 `ask.py`에서 `rag.py`로 옮겨 터미널과 웹이 함께 쓰도록 함. `.env.example` 추가.
+>
+> 개정 2026-10-13: 화면 디자인 교체. 인터넷 공개 배포 지원 추가(화면은 GitHub Pages, 서버는 Google Cloud Run).
+> `Dockerfile`, Pages 워크플로, `web/config.js`를 넣고, 서버에 다른 주소 허용(CORS), LLM 답변 하루 상한,
+> 원문 PDF가 없을 때 `Open PDF` 숨김을 추가함. `requirements.txt`의 버전을 고정함.
+
+**데모: https://jo0hk.github.io/DNV_RAG/** (서버가 쉬고 있었다면 첫 검색은 1분 가까이 걸릴 수 있습니다)
 
 도면 수정 사항이나 문제 사항을 영어 문장으로 입력하면, DNV 선급 규정에서
 관련 조항을 찾아 답변 + 근거 조항·페이지를 영어로 출력합니다.
@@ -17,7 +23,9 @@
 | `ingest.py` | PDF → 조항 단위 chunk → 임베딩 → DB 저장 (처음 한 번만 실행) |
 | `rag.py` | 검색(벡터 + 키워드)과 LLM 답변 생성. 웹과 터미널이 함께 씀 |
 | `server.py` | 웹 서버: 화면(`web/`)과 API(`/api/search`, `/api/answer` 등)를 띄움 |
-| `web/` | 화면 (`index.html`, `style.css`, `app.js`). 빌드 과정 없이 그대로 열림 |
+| `web/` | 화면 (`index.html`, `style.css`, `app.js`). 빌드 과정 없이 그대로 열림. `config.js`에 배포 서버 주소를 적음 |
+| `Dockerfile` | 서버 배포용 이미지 (Cloud Run) |
+| `.github/workflows/pages.yml` | `web/`을 GitHub Pages에 올리는 워크플로 |
 | `ask.py` | 터미널용: 영어 문장 입력 → 답변 + 출처 출력 |
 | `llm.py` | LLM API 호출 (Claude / GPT / Gemini 중 키가 있는 것 사용) |
 | `config.py` | 경로, 임베딩 모델, 검색 개수 등 설정 |
@@ -63,8 +71,35 @@ python ask.py
 - 답변의 `[1]` 같은 번호를 누르면 해당 출처 카드로 이동합니다.
 - 출처 카드의 `Open PDF`는 규정 원문 PDF를 해당 페이지에서 엽니다 (수식·그림 확인용).
 - 질문 기록은 브라우저에만 저장됩니다.
-- 서버는 이 컴퓨터(`127.0.0.1`)에서만 접속되게 띄웁니다. `Open PDF`가 규정 원문을 그대로 내보내므로
-  외부에 공개하는 서버로 쓰지 않습니다.
+- 위 명령으로 띄운 서버는 이 컴퓨터(`127.0.0.1`)에서만 접속됩니다.
+
+## 인터넷에 공개하기
+
+화면은 GitHub Pages에, 서버는 Google Cloud Run에 올립니다. 서버는 안 쓸 때 꺼져 있다가 첫 요청에 켜집니다.
+
+```
+https://jo0hk.github.io/DNV_RAG/  (web/ 폴더, GitHub Pages)
+        │  /api/search, /api/answer
+        ▼
+Cloud Run 서버 (Dockerfile: server.py + 임베딩 모델 + chroma_db)
+```
+
+1. 서버 배포. Google Cloud 프로젝트와 결제 계정, `gcloud` CLI가 필요합니다. `chroma_db`가 만들어져 있어야 합니다.
+
+   ```powershell
+   gcloud run deploy dnv-rule-finder --source . --region asia-northeast1 --memory 1Gi --cpu 1 --cpu-boost --max-instances 1 --allow-unauthenticated --set-env-vars "ALLOWED_ORIGINS=https://jo0hk.github.io,ANSWER_LIMIT_PER_DAY=100"
+   ```
+
+   LLM API 키는 Cloud Run 콘솔의 서비스 > 새 버전 수정 및 배포 > 변수 및 보안 비밀에서 `GEMINI_API_KEY`로 넣습니다.
+2. 배포가 끝나면 나오는 서버 주소를 `web/config.js`의 `CLOUD_RUN_URL`에 적고 커밋·푸시합니다.
+3. GitHub 저장소 Settings > Pages > Source를 `GitHub Actions`로 바꿉니다. `web/`이 바뀔 때마다 자동으로 올라갑니다.
+
+공개 서버에서 달라지는 점:
+
+- 원문 PDF는 올리지 않으므로 `Open PDF` 링크가 보이지 않습니다.
+- LLM 답변은 `ANSWER_LIMIT_PER_DAY`번까지만 만듭니다(API 요금 보호). 횟수는 서버 메모리에 세므로 서버가 꺼졌다 켜지면 다시 0부터 셉니다.
+- `ALLOWED_ORIGINS`에 적은 주소의 화면만 서버에 요청할 수 있습니다.
+- 배포 이미지에는 규정 본문(`chroma_db`)이 들어가고, 검색 결과로 발췌문이 누구에게나 나갑니다.
 
 ## 동작 원리
 
