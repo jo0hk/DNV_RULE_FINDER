@@ -1,24 +1,10 @@
 ## DNV 규정 RAG
 
-> 개정 2026-10-12: 영어 전용으로 변경. 한국어 입력을 영어 검색어로 바꾸던 단계를 없애고,
-> 한글이 들어간 문장은 받지 않도록 함. LLM 프롬프트, 답변, 화면 출력을 영어로 바꿈.
-> 시연용 예시 문장을 영어로 교체함.
->
-> 개정 2026-10-12 (2): 웹 화면 추가. FastAPI 서버(`server.py`)와 화면(`web/`)을 넣고,
-> 검색·답변 코드를 `ask.py`에서 `rag.py`로 옮겨 터미널과 웹이 함께 쓰도록 함. `.env.example` 추가.
->
-> 개정 2026-10-13: 화면 디자인 교체. 인터넷 공개 배포 지원 추가(화면은 GitHub Pages, 서버는 Google Cloud Run).
-> `Dockerfile`, Pages 워크플로, `web/config.js`를 넣고, 서버에 다른 주소 허용(CORS), LLM 답변 하루 상한,
-> 원문 PDF가 없을 때 `Open PDF` 숨김을 추가함. `requirements.txt`의 버전을 고정함.
-
-> 개정 2026-10-13 (2): 저장소 이름이 `DNV_RULE_FINDER`로 바뀌어 데모 주소를 고침.
-> `.env.example`을 없애고, `.env`에 적을 내용을 실행 방법에 직접 적음.
-
-**데모: https://jo0hk.github.io/DNV_RULE_FINDER/** (서버가 쉬고 있었다면 첫 검색은 1분 가까이 걸릴 수 있습니다)
+**데모: https://jo0hk.github.io/DNV_RULE_FINDER/**
 
 도면 수정 사항이나 문제 사항을 영어 문장으로 입력하면, DNV 선급 규정에서
 관련 조항을 찾아 답변 + 근거 조항·페이지를 영어로 출력합니다.
-한글이 들어간 문장은 받지 않습니다 (`English only` 안내만 출력).
+한글이 들어간 문장은 받지 않습니다.
 웹 화면과 터미널 두 가지로 쓸 수 있습니다.
 
 | 파일 | 역할 |
@@ -138,14 +124,3 @@ Cloud Run 서버 (Dockerfile: server.py + 임베딩 모델 + chroma_db)
    조항 번호·강재 등급처럼 정확한 단어가 중요한 규정 문서에서는 둘을 합치는 편이 안정적입니다.
 5. 답변 생성: "발췌문에 있는 내용만 쓰고, 없으면 못 찾았다고 말하고, 근거 조항을 표시하고, 영어로 답하라"고 지시합니다.
 
-## 시연용 예시 문장
-
-아래 문장으로 검색(벡터 + 키워드, RRF)했을 때 해당 조항이 든 chunk가 LLM에 넘기는 상위 6개 안에
-아래 순위로 나오는 것을 확인했습니다 (2026-10-12, LLM 답변 단계는 제외).
-
-| 입력 문장 | 찾아야 하는 조항 | 순위 |
-|---|---|---|
-| Emergency towing arrangement SWL changed to 1,000 kN for a 60,000 dwt oil tanker | Pt.5 Ch.5 Sec.2 [2.2.3] | 1 |
-| Bilge plate thickness modified to be thinner than the adjacent bottom plate | Pt.3 Ch.6 Sec.4 [2.1.1] | 2 |
-| Inner bottom plate below a vertically corrugated bulkhead without lower stool is not Z-grade steel | Pt.5 Ch.5 Sec.2 [2.1.2] | 1 |
-| Non-destructive testing omitted after weld repair of a copper alloy casting | Pt.2 Ch.2 Sec.11 [1.13.6] | 1 |
