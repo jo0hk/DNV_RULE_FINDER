@@ -1,0 +1,1042 @@
+[
+ {
+  "id": "q01",
+  "question": "Clad plate test report shows the stainless cladding layer reaching only 10% elongation when tested on its own after machining off the base steel",
+  "topic": "materials",
+  "part": "Pt.2",
+  "gold": [
+   "DNV-RU-SHIP Pt.2 Ch.2 Sec.4 [2.4.2]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.2 Ch.2 Sec.4 [2.4]"
+ },
+ {
+  "id": "q02",
+  "question": "Structural test plan covers only two ballast tanks, and the selected tanks do not include all representative structural members",
+  "topic": "testing",
+  "part": "Pt.2",
+  "gold": [
+   "DNV-RU-SHIP Pt.2 Ch.4 Sec.8 [3.2.2]"
+  ],
+  "vector": 5,
+  "keyword": 3,
+  "hybrid": 3,
+  "hybrid_top1": "DNV-RU-SHIP Pt.2 Ch.4 Sec.8 [2.4]"
+ },
+ {
+  "id": "q03",
+  "question": "Butt joint with 20 mm root gap welded in production without a separate procedure qualification for wide gap welding",
+  "topic": "welding",
+  "part": "Pt.2",
+  "gold": [
+   "DNV-RU-SHIP Pt.2 Ch.4 Sec.5 [1.6.4]"
+  ],
+  "vector": 2,
+  "keyword": 2,
+  "hybrid": 2,
+  "hybrid_top1": "DNV-RU-SHIP Pt.2 Ch.4 Sec.5 [6.2]"
+ },
+ {
+  "id": "q04",
+  "question": "Tensile certificate for a steel without a distinct yield point reports upper yield strength instead of 0.2% proof stress",
+  "topic": "materials",
+  "part": "Pt.2",
+  "gold": [
+   "DNV-RU-SHIP Pt.2 Ch.1 Sec.3 [3.1.2]"
+  ],
+  "vector": 2,
+  "keyword": 2,
+  "hybrid": 2,
+  "hybrid_top1": "DNV-RU-SHIP Pt.2 Ch.2 Sec.2 [5.5]"
+ },
+ {
+  "id": "q05",
+  "question": "Iron casting batch delivered with test blocks only for the first test, nothing left for possible re-tests",
+  "topic": "materials",
+  "part": "Pt.2",
+  "gold": [
+   "DNV-RU-SHIP Pt.2 Ch.2 Sec.9 [1.9.1]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.2 Ch.2 Sec.9 [1.9]"
+ },
+ {
+  "id": "q06",
+  "question": "NV E460 extra high strength steel plates supplied without fine grain treatment and carbon equivalent not checked",
+  "topic": "materials",
+  "part": "Pt.2",
+  "gold": [
+   "DNV-RU-SHIP Pt.2 Ch.2 Sec.2 [5.3.1]"
+  ],
+  "vector": 2,
+  "keyword": 6,
+  "hybrid": 2,
+  "hybrid_top1": "DNV-RU-SHIP Pt.2 Ch.2 Sec.2 [4.2]"
+ },
+ {
+  "id": "q07",
+  "question": "FRP sandwich core foam kept in an unheated outdoor container until the day of lamination",
+  "topic": "materials",
+  "part": "Pt.2",
+  "gold": [
+   "DNV-RU-SHIP Pt.2 Ch.3 Sec.3 [2.1.5]"
+  ],
+  "vector": 2,
+  "keyword": 14,
+  "hybrid": 6,
+  "hybrid_top1": "DNV-RU-SHIP Pt.2 Ch.3 Sec.3 [3.2]"
+ },
+ {
+  "id": "q08",
+  "question": "Austenitic stainless pipe bent cold with 25% deformation, and a welded section cold formed 5% without qualification",
+  "topic": "fabrication",
+  "part": "Pt.2",
+  "gold": [
+   "DNV-RU-SHIP Pt.2 Ch.4 Sec.6 [6.4.1]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.2 Ch.4 Sec.6 [6.4]"
+ },
+ {
+  "id": "q09",
+  "question": "Electrogas welding of side shell with heat input of 80 kJ/cm on steel not approved for high heat input welding",
+  "topic": "welding",
+  "part": "Pt.2",
+  "gold": [
+   "DNV-RU-SHIP Pt.2 Ch.4 Sec.6 [2.1.2]"
+  ],
+  "vector": 89,
+  "keyword": 10,
+  "hybrid": 23,
+  "hybrid_top1": "DNV-RU-SHIP Pt.2 Ch.4 Sec.5 [9.1]"
+ },
+ {
+  "id": "q10",
+  "question": "Non-destructive testing omitted after weld repair of a copper alloy casting",
+  "topic": "materials",
+  "part": "Pt.2",
+  "gold": [
+   "DNV-RU-SHIP Pt.2 Ch.2 Sec.11 [1.13.6]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.2 Ch.2 Sec.11 [1.13]"
+ },
+ {
+  "id": "q11",
+  "question": "Pressed dished ends for a pressure vessel formed to the yard's own procedure instead of the pressure vessel forming requirements",
+  "topic": "fabrication",
+  "part": "Pt.2",
+  "gold": [
+   "DNV-RU-SHIP Pt.2 Ch.4 Sec.6 [6.1.4]"
+  ],
+  "vector": 1,
+  "keyword": 5,
+  "hybrid": 2,
+  "hybrid_top1": "DNV-RU-SHIP Pt.2 Ch.2 Sec.3 [5.1]"
+ },
+ {
+  "id": "q12",
+  "question": "Rule length taken as 99% of the waterline length at scantling draught",
+  "topic": "general",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.1 Sec.4 [3.1.1]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.1 Sec.4 [3.1]"
+ },
+ {
+  "id": "q13",
+  "question": "Loading manual does not state the minimum forward slamming draught or the maximum allowable cargo density",
+  "topic": "general",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.1 Sec.5 [2.1.4]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.1 Sec.5 [2.1]"
+ },
+ {
+  "id": "q14",
+  "question": "General arrangement has no transverse watertight bulkhead at the aft end of the engine room",
+  "topic": "arrangement",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.2 Sec.2 [1.1.1]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.2 Sec.2 [1.1]"
+ },
+ {
+  "id": "q15",
+  "question": "Watertight door in a bulkhead below the bulkhead deck can only be closed locally, with no operation from above",
+  "topic": "arrangement",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.2 Sec.2 [1.2.2]"
+  ],
+  "vector": 1,
+  "keyword": 13,
+  "hybrid": 5,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.12 Sec.1 [2]"
+ },
+ {
+  "id": "q16",
+  "question": "Double bottom is omitted in way of the bow thruster room",
+  "topic": "arrangement",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.2 Sec.3 [2.1.3]"
+  ],
+  "vector": 12,
+  "keyword": 15,
+  "hybrid": 5,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.3 Sec.5 [5.1]"
+ },
+ {
+  "id": "q17",
+  "question": "Steel sandwich panels proposed for internal decks in place of conventional stiffened plating",
+  "topic": "structure",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [5.1.1]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [5.1]"
+ },
+ {
+  "id": "q18",
+  "question": "Deck longitudinals sniped and terminated at each transverse web frame instead of running continuous",
+  "topic": "structure",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.3 Sec.5 [2.2.4]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.3 Sec.5 [2.2]"
+ },
+ {
+  "id": "q19",
+  "question": "Docking brackets on the centre girder are not connected to the neighbouring bottom longitudinals",
+  "topic": "structure",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.3 Sec.5 [3.4.2]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.3 Sec.5 [3.4]"
+ },
+ {
+  "id": "q20",
+  "question": "Transversely framed double bottom in the engine room has floors only at every second frame",
+  "topic": "structure",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.3 Sec.5 [5.1.7]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.3 Sec.5 [5.1]"
+ },
+ {
+  "id": "q21",
+  "question": "Aft peak platform is offset from the stringer in the space just forward, with no wide tapering bracket for continuity",
+  "topic": "structure",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.3 Sec.5 [4.2.3]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.3 Sec.5 [4.2]"
+ },
+ {
+  "id": "q22",
+  "question": "Vertically corrugated bulkhead with lower stool has no floors fitted in line with the stool side plating",
+  "topic": "structure",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.3 Sec.6 [6.1.6]"
+  ],
+  "vector": 4,
+  "keyword": 1,
+  "hybrid": 3,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.5 Sec.2 [2.1]"
+ },
+ {
+  "id": "q23",
+  "question": "Corrugations on the two sides of a deck girder are misaligned where the bulkhead is cut by the girder",
+  "topic": "structure",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.3 Sec.6 [6.1.5]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.3 Sec.6 [6.1]"
+ },
+ {
+  "id": "q24",
+  "question": "Scallop in a side longitudinal located 100 mm from the toe of the end bracket",
+  "topic": "structure",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.3 Sec.6 [7.1.2]"
+  ],
+  "vector": 2,
+  "keyword": 215,
+  "hybrid": 11,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.3 Sec.6 [4.4]"
+ },
+ {
+  "id": "q25",
+  "question": "Plate panel exposed to two compartments with different corrosion additions was designed using the smaller value",
+  "topic": "corrosion",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.3 Sec.3 [1.2.7]"
+  ],
+  "vector": 1,
+  "keyword": 3,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.3 Sec.3 [1.2]"
+ },
+ {
+  "id": "q26",
+  "question": "Stainless clad cargo tank plating designed with 1.0 mm corrosion addition on the stainless side",
+  "topic": "corrosion",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.3 Sec.3 [1.2.4]"
+  ],
+  "vector": 10,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.3 Sec.3 [1.2]"
+ },
+ {
+  "id": "q27",
+  "question": "Pressure for the yielding check of a longitudinally framed bottom plate taken at the panel corner instead of the defined load calculation point",
+  "topic": "loads",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.3 Sec.7 [2.2.1]"
+  ],
+  "vector": 1,
+  "keyword": 2,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.3 Sec.7 [2.2]"
+ },
+ {
+  "id": "q28",
+  "question": "Fatigue assessment uses the maximum permissible still water bending moment rather than typical operating values",
+  "topic": "loads",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.4 Sec.4 [2.1.2]"
+  ],
+  "vector": 2,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.4 Sec.4 [2.1]"
+ },
+ {
+  "id": "q29",
+  "question": "Container ship wave bending moment and shear force taken from the general hull girder load formulas",
+  "topic": "loads",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.4 Sec.4 [1.1.3]"
+  ],
+  "vector": 1,
+  "keyword": 2,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.4 Sec.4 [1.1]"
+ },
+ {
+  "id": "q30",
+  "question": "High tensile steel in the strength deck ends abruptly at the midship region without checking that stresses forward are acceptable for mild steel",
+  "topic": "hull girder",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.6.2]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.6]"
+ },
+ {
+  "id": "q31",
+  "question": "Open hatch ship hull girder shear stress calculated without the contribution from torsional moments",
+  "topic": "hull girder",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.5 Sec.3 [3.2.1]"
+  ],
+  "vector": 1,
+  "keyword": 2,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.5 Sec.3 [3.2]"
+ },
+ {
+  "id": "q32",
+  "question": "Keel plate net thickness reduced below the minimum plating thickness for bottom structure",
+  "topic": "plating",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1.1]"
+  ],
+  "vector": 8,
+  "keyword": 24,
+  "hybrid": 13,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.10 Sec.12 [2.3]"
+ },
+ {
+  "id": "q33",
+  "question": "Bilge plate thickness modified to be thinner than the adjacent bottom plate",
+  "topic": "plating",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [2.1.1]"
+  ],
+  "vector": 2,
+  "keyword": 2,
+  "hybrid": 2,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [2.1]"
+ },
+ {
+  "id": "q34",
+  "question": "Heavy shell plates in way of the rudder horn floors deleted, normal shell thickness used",
+  "topic": "plating",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [2.2.4]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [2.2]"
+ },
+ {
+  "id": "q35",
+  "question": "Bulbous bow shell plating not increased where the anchor and chain may hit it during anchor handling",
+  "topic": "plating",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [2.2.2]"
+  ],
+  "vector": 1,
+  "keyword": 2,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [2.2]"
+ },
+ {
+  "id": "q36",
+  "question": "Shell plate welded to the stern frame and propeller boss reduced to 12 mm",
+  "topic": "plating",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [2.2.3]"
+  ],
+  "vector": 7,
+  "keyword": 1,
+  "hybrid": 3,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.11 Sec.4 [3.2]"
+ },
+ {
+  "id": "q37",
+  "question": "Built-up corrugation with web thinner than flange, required thickness of the thinner plate not checked",
+  "topic": "plating",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.2.2]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.2]"
+ },
+ {
+  "id": "q38",
+  "question": "Side longitudinal changed from HP 240x10 to HP 220x10, section modulus now lower",
+  "topic": "stiffener",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]"
+  ],
+  "vector": 14,
+  "keyword": 13,
+  "hybrid": 7,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.1 Sec.2 [5.2]"
+ },
+ {
+  "id": "q39",
+  "question": "Struts between inner and outer side stiffeners counted as effective supports to shorten the stiffener span",
+  "topic": "stiffener",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.5]"
+  ],
+  "vector": 5,
+  "keyword": 3,
+  "hybrid": 4,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.3 Sec.7 [1.1]"
+ },
+ {
+  "id": "q40",
+  "question": "Side web frame face plate width reduced, section modulus of the primary member now below requirement",
+  "topic": "primary member",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.6 Sec.6 [2.1.1]"
+  ],
+  "vector": 50,
+  "keyword": 266,
+  "hybrid": null,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.8 Sec.4 [2.1]"
+ },
+ {
+  "id": "q41",
+  "question": "Internal walls in the accommodation deckhouse plated with 4 mm plate",
+  "topic": "plating",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.6 Sec.8 [3.1.3]"
+  ],
+  "vector": 19,
+  "keyword": 1,
+  "hybrid": 2,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.4 Sec.5 [3.4]"
+ },
+ {
+  "id": "q42",
+  "question": "Buckling check of a plate panel with two thicknesses across its width done using the thicker plate",
+  "topic": "buckling",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.8 Sec.3 [1.2.1]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.8 Sec.3 [1.2]"
+ },
+ {
+  "id": "q43",
+  "question": "Stiffener spacing varies within the panel but buckling was calculated once with the average spacing",
+  "topic": "buckling",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.8 Sec.4 [2.2.2]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.8 Sec.4 [2.2]"
+ },
+ {
+  "id": "q44",
+  "question": "Box cooler mounting flange thickness only equal to the depth of the bolt holes",
+  "topic": "special structure",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.10 Sec.6 [7.3.2]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.10 Sec.6 [7.3]"
+ },
+ {
+  "id": "q45",
+  "question": "Tank bulkhead checked only for transverse sloshing, longitudinal sloshing pressure ignored",
+  "topic": "loads",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.10 Sec.4 [1.3.5]"
+  ],
+  "vector": 12,
+  "keyword": 8,
+  "hybrid": 10,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.10 Sec.4 [1.3]"
+ },
+ {
+  "id": "q46",
+  "question": "Bow impact assessment of web frames and stringers skipped for a 120 m vessel",
+  "topic": "special structure",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.10 Sec.1 [3.3.1]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.10 Sec.1 [3.3]"
+ },
+ {
+  "id": "q47",
+  "question": "Anchor proof load applied at the tip of the bill during testing",
+  "topic": "equipment",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.11 Sec.1 [4.5.3]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.11 Sec.1 [4.5]"
+ },
+ {
+  "id": "q48",
+  "question": "Crane pedestal attached to the deck with fillet welds only, no penetration welding",
+  "topic": "equipment",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.11 Sec.2 [4.4.2]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.11 Sec.2 [4.4]"
+ },
+ {
+  "id": "q49",
+  "question": "Bulwark opening placed close to the end of the superstructure and no strengthened stays at the opening ends",
+  "topic": "equipment",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.11 Sec.3 [2.2.3]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.11 Sec.3 [2.2]"
+ },
+ {
+  "id": "q50",
+  "question": "Bulwark plate not thickened around the mooring pipe",
+  "topic": "equipment",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.11 Sec.3 [2.2.7]"
+  ],
+  "vector": 1,
+  "keyword": 16,
+  "hybrid": 5,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.11 Sec.3 [2.2]"
+ },
+ {
+  "id": "q51",
+  "question": "Small steel hatch cover on the exposed fore deck with plate thickness reduced to 6 mm",
+  "topic": "hatch",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.12 Sec.2 [3.3.1]"
+  ],
+  "vector": 2,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.12 Sec.2 [3.3]"
+ },
+ {
+  "id": "q52",
+  "question": "Small hatch on the forecastle deck hinged at its aft edge",
+  "topic": "hatch",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.12 Sec.2 [3.5.4]"
+  ],
+  "vector": 2,
+  "keyword": 2,
+  "hybrid": 2,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.12 Sec.2 [4.3]"
+ },
+ {
+  "id": "q53",
+  "question": "Cargo hatch cover buckling check performed with gross scantlings",
+  "topic": "hatch",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.12 Sec.4 [3.6.1]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.12 Sec.4 [3.6]"
+ },
+ {
+  "id": "q54",
+  "question": "Watertight hatch covers left out of the function test plan",
+  "topic": "hatch",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.12 Sec.1 [3.3.1]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.12 Sec.1 [3.3]"
+ },
+ {
+  "id": "q55",
+  "question": "Bilge keel butt weld lines up with a butt weld in the shell plating",
+  "topic": "welding",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.13 Sec.1 [5.1.2]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.13 Sec.1 [5.1]"
+ },
+ {
+  "id": "q56",
+  "question": "Staggered intermittent fillet welds on a stiffener passing through a watertight bulkhead, no leak stopper",
+  "topic": "welding",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.13 Sec.1 [2.3.3]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.13 Sec.1 [2.3]"
+ },
+ {
+  "id": "q57",
+  "question": "One side continuous fillet weld given the same leg size as double continuous welding",
+  "topic": "welding",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.13 Sec.1 [2.3.5]"
+  ],
+  "vector": 2,
+  "keyword": 2,
+  "hybrid": 2,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.13 Sec.1 [2.5]"
+ },
+ {
+  "id": "q58",
+  "question": "Pillar under tension, weld leg length at its end connections reduced to 5 mm",
+  "topic": "welding",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.13 Sec.1 [5.2.1]"
+  ],
+  "vector": 1,
+  "keyword": 2,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.13 Sec.1 [5.2]"
+ },
+ {
+  "id": "q59",
+  "question": "Rudder stock diameter reduced from 450 mm to 420 mm",
+  "topic": "rudder",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.14 Sec.1 [4.1.1]"
+  ],
+  "vector": 3,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.14 Sec.1 [4.1]"
+ },
+ {
+  "id": "q60",
+  "question": "Rudder bearing wear cannot be measured without dismantling the rudder",
+  "topic": "rudder",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.14 Sec.1 [1.5.2]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.14 Sec.1 [1.5]"
+ },
+ {
+  "id": "q61",
+  "question": "Inclining test scheduled without attendance of the class surveyor",
+  "topic": "stability",
+  "part": "Pt.3",
+  "gold": [
+   "DNV-RU-SHIP Pt.3 Ch.15 Sec.1 [6.2.1]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.3 Ch.15 Sec.1 [6.2]"
+ },
+ {
+  "id": "q62",
+  "question": "Emergency towing arrangement SWL changed to 1,000 kN for a 60,000 dwt oil tanker",
+  "topic": "tanker",
+  "part": "Pt.5",
+  "gold": [
+   "DNV-RU-SHIP Pt.5 Ch.5 Sec.2 [2.2.3]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.5 Sec.2 [2.2]"
+ },
+ {
+  "id": "q63",
+  "question": "Inner bottom plate below a vertically corrugated bulkhead without lower stool is not Z-grade steel",
+  "topic": "tanker",
+  "part": "Pt.5",
+  "gold": [
+   "DNV-RU-SHIP Pt.5 Ch.5 Sec.2 [2.1.2]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.5 Sec.2 [2.1]"
+ },
+ {
+  "id": "q64",
+  "question": "Oil tanker without lower stool: no fine mesh analysis of the corrugation to inner bottom connection",
+  "topic": "tanker",
+  "part": "Pt.5",
+  "gold": [
+   "DNV-RU-SHIP Pt.5 Ch.5 Sec.2 [4.2.3]"
+  ],
+  "vector": 3,
+  "keyword": 1,
+  "hybrid": 2,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.1 Sec.4 [3.1]"
+ },
+ {
+  "id": "q65",
+  "question": "Combination carrier for both bulk and oil designed only to the double hull oil tanker structural rules",
+  "topic": "tanker",
+  "part": "Pt.5",
+  "gold": [
+   "DNV-RU-SHIP Pt.5 Ch.5 Sec.2 [1.1.3]"
+  ],
+  "vector": 2,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.5 Sec.2 [1.1]"
+ },
+ {
+  "id": "q66",
+  "question": "Bulk carrier loading steel coils: inner bottom longitudinal section modulus and web thickness not checked for coil loads",
+  "topic": "bulk carrier",
+  "part": "Pt.5",
+  "gold": [
+   "DNV-RU-SHIP Pt.5 Ch.1 Sec.3 [3.3.2]"
+  ],
+  "vector": 12,
+  "keyword": 6,
+  "hybrid": 9,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.1 Sec.3 [3.1]"
+ },
+ {
+  "id": "q67",
+  "question": "Hopper tank plating designed without the shear load from dry bulk cargo",
+  "topic": "bulk carrier",
+  "part": "Pt.5",
+  "gold": [
+   "DNV-RU-SHIP Pt.5 Ch.1 Sec.2 [3.5.2]"
+  ],
+  "vector": 2,
+  "keyword": 2,
+  "hybrid": 2,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.1 Sec.2 [3.5]"
+ },
+ {
+  "id": "q68",
+  "question": "Great Lakes bulk carrier guard rails with two courses and the lowest course 300 mm above deck",
+  "topic": "bulk carrier",
+  "part": "Pt.5",
+  "gold": [
+   "DNV-RU-SHIP Pt.5 Ch.1 Sec.9 [11.3.3]"
+  ],
+  "vector": 2,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.1 Sec.9 [11.3]"
+ },
+ {
+  "id": "q69",
+  "question": "Container lashing rods attached to the upper corner castings instead of the lower ones",
+  "topic": "container",
+  "part": "Pt.5",
+  "gold": [
+   "DNV-RU-SHIP Pt.5 Ch.2 Sec.8 [2.3.4]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.2 Sec.8 [2.3]"
+ },
+ {
+  "id": "q70",
+  "question": "RO/RO global FE racking analysis covers only load patterns LC1 and LC2",
+  "topic": "ro-ro",
+  "part": "Pt.5",
+  "gold": [
+   "DNV-RU-SHIP Pt.5 Ch.3 Sec.2 [3.3.5]"
+  ],
+  "vector": 11,
+  "keyword": 1,
+  "hybrid": 4,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.3 Sec.2 [1.2]"
+ },
+ {
+  "id": "q71",
+  "question": "Passenger ship deck used by luggage trolleys, stiffeners not checked for wheel loads",
+  "topic": "passenger",
+  "part": "Pt.5",
+  "gold": [
+   "DNV-RU-SHIP Pt.5 Ch.4 Sec.2 [1.2.6]"
+  ],
+  "vector": 3,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.4 Sec.2 [1.2]"
+ },
+ {
+  "id": "q72",
+  "question": "Passenger ship transverse strength analysis run with head sea load cases only",
+  "topic": "passenger",
+  "part": "Pt.5",
+  "gold": [
+   "DNV-RU-SHIP Pt.5 Ch.4 Sec.2 [2.2.2]"
+  ],
+  "vector": 2,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.4 Sec.2 [2.2]"
+ },
+ {
+  "id": "q73",
+  "question": "Semi-submersible heavy transport vessel chain locker boundaries designed for the intact waterline pressure",
+  "topic": "special vessel",
+  "part": "Pt.5",
+  "gold": [
+   "DNV-RU-SHIP Pt.5 Ch.10 Sec.5 [2.2.5]"
+  ],
+  "vector": 28,
+  "keyword": 2,
+  "hybrid": 3,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.10 Sec.5 [2.2]"
+ },
+ {
+  "id": "q74",
+  "question": "Seismic vessel winch frame acting as a deck pillar but not checked to hull strength criteria",
+  "topic": "special vessel",
+  "part": "Pt.5",
+  "gold": [
+   "DNV-RU-SHIP Pt.5 Ch.10 Sec.7 [4.2.3]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.10 Sec.7 [4.2]"
+ },
+ {
+  "id": "q75",
+  "question": "Barge has no drainage arrangement for the buoyancy tanks and watertight compartments",
+  "topic": "barge",
+  "part": "Pt.5",
+  "gold": [
+   "DNV-RU-SHIP Pt.5 Ch.11 Sec.5 [2.1.1]"
+  ],
+  "vector": 2,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.11 Sec.5 [2.1]"
+ },
+ {
+  "id": "q76",
+  "question": "Type C tank on saddle supports, stresses from hull deflection transferred to the tank not analysed",
+  "topic": "gas carrier",
+  "part": "Pt.5",
+  "gold": [
+   "DNV-RU-SHIP Pt.5 Ch.7 Sec.22 [2.5.5]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.7 Sec.22 [2.5]"
+ },
+ {
+  "id": "q77",
+  "question": "Anchor handling winch load test does not include the braking test",
+  "topic": "service vessel",
+  "part": "Pt.5",
+  "gold": [
+   "DNV-RU-SHIP Pt.5 Ch.9 Sec.3 [1.4.3]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.9 Sec.3 [1.4]"
+ },
+ {
+  "id": "q78",
+  "question": "Fishing vessel emergency generator located inside the main engine room",
+  "topic": "fishing vessel",
+  "part": "Pt.5",
+  "gold": [
+   "DNV-RU-SHIP Pt.5 Ch.12 Sec.4 [2.1.1]"
+  ],
+  "vector": 1,
+  "keyword": 7,
+  "hybrid": 5,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.12 Sec.4 [1.1]"
+ },
+ {
+  "id": "q79",
+  "question": "Standby vessel access route from the rescue zone has bare steel deck without slip resistant coating",
+  "topic": "service vessel",
+  "part": "Pt.5",
+  "gold": [
+   "DNV-RU-SHIP Pt.5 Ch.9 Sec.4 [4.1.2]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.9 Sec.4 [4.1]"
+ },
+ {
+  "id": "q80",
+  "question": "Fishing vessel water-on-deck heeling moment calculated with the deck well only half filled",
+  "topic": "fishing vessel",
+  "part": "Pt.5",
+  "gold": [
+   "DNV-RU-SHIP Pt.5 Ch.12 Sec.5 [2.5.4]"
+  ],
+  "vector": 1,
+  "keyword": 1,
+  "hybrid": 1,
+  "hybrid_top1": "DNV-RU-SHIP Pt.5 Ch.12 Sec.5 [2.5]"
+ }
+]

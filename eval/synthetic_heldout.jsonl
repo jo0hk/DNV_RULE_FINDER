@@ -1,0 +1,204 @@
+{"chunk_id": "chunk-45", "query": "What are the standard temperature limits for room temperature tensile testing of materials?"}
+{"chunk_id": "chunk-45", "query": "At what temperature range must ambient tensile tests be performed?"}
+{"chunk_id": "chunk-45", "query": "Make sure ambient tensile tests are kept between 10C and 35C."}
+{"chunk_id": "chunk-275", "query": "What mandrel size and bending angle are required for bend testing of clad steel plates?"}
+{"chunk_id": "chunk-275", "query": "How should bend tests on clad steel be performed regarding mandrel diameter and bending angle?"}
+{"chunk_id": "chunk-275", "query": "We need two bend test specimens from each clad plate bent 180 degrees over a mandrel."}
+{"chunk_id": "chunk-520", "query": "How should test blocks for iron castings be cast, stored, and heat-treated?"}
+{"chunk_id": "chunk-520", "query": "What are the requirements for separately cast test blocks and batch testing of iron castings?"}
+{"chunk_id": "chunk-520", "query": "Test blocks for castings must be heat-treated together with the actual castings."}
+{"chunk_id": "chunk-595", "query": "What post-repair procedures are required for weld repairs on copper alloy castings?"}
+{"chunk_id": "chunk-595", "query": "Are all weld repairs on copper alloy castings subject to NDT and grinding?"}
+{"chunk_id": "chunk-595", "query": "Grind all weld repairs smooth and make sure they undergo non-destructive testing."}
+{"chunk_id": "chunk-698", "query": "What are the specific temperature and environmental storage requirements for FRP resins and core materials?"}
+{"chunk_id": "chunk-698", "query": "How should resins and core materials be stored if no manufacturer guidelines exist?"}
+{"chunk_id": "chunk-698", "query": "Store resins in dark, dry rooms between 10C and 18C and keep core materials dry."}
+{"chunk_id": "chunk-826", "query": "What qualification procedure and testing are required for wide gap welding exceeding 16 mm?"}
+{"chunk_id": "chunk-826", "query": "When do we need a separate WPQT for wide gap welding joints?"}
+{"chunk_id": "chunk-826", "query": "We need a separate WPQT for wide gap welding when the gap exceeds 16 mm."}
+{"chunk_id": "chunk-927", "query": "What material identification and weldability verification steps are required for high heat input welding?"}
+{"chunk_id": "chunk-927", "query": "How do we handle material traceability and weldability for high heat input welding over 50 kJ/cm?"}
+{"chunk_id": "chunk-927", "query": "Ensure we have a material ID system and check weldability for heat inputs above 50 kJ/cm."}
+{"chunk_id": "chunk-933", "query": "We need a special review for some unplanned cold bending done on the main deck framing."}
+{"chunk_id": "chunk-933", "query": "Are unplanned deformations covered by standard cold forming rules?"}
+{"chunk_id": "chunk-933", "query": "unplanned cold work needs case-by-case check"}
+{"chunk_id": "chunk-940", "query": "Increased plastic deformation to 22 percent on stainless steel bracket flanges since parent elongation is over 35 percent."}
+{"chunk_id": "chunk-940", "query": "What is the maximum allowed plastic deformation for cold forming austenitic stainless steels without extra testing?"}
+{"chunk_id": "chunk-940", "query": "we cold bent stainless up to 20 percent deformation, is that fine?"}
+{"chunk_id": "chunk-1011", "query": "Applied air testing for all sister tanks in the cargo block except for the pollutant cargo boundary tanks."}
+{"chunk_id": "chunk-1011", "query": "Can we use an air leak test instead of a full structural head test for cargo tanks?"}
+{"chunk_id": "chunk-1011", "query": "can we swap hydro tests for air tests on these tanks?"}
+{"chunk_id": "chunk-1081", "query": "Updated rule length measurement in the general arrangement to account for the concave stem contour."}
+{"chunk_id": "chunk-1081", "query": "How is the rule length L defined for a vessel with an unusual stem arrangement?"}
+{"chunk_id": "chunk-1081", "query": "where do we measure rule length from on a concave bow"}
+{"chunk_id": "chunk-1111", "query": "Included minimum forward slamming draughts and cargo density limits in the loading manual operational limitations."}
+{"chunk_id": "chunk-1111", "query": "What specific operational limits and draught restrictions must be detailed in the loading manual?"}
+{"chunk_id": "chunk-1111", "query": "list all loading manual restrictions like slamming draughts and cargo densities"}
+{"chunk_id": "chunk-1116", "query": "Added two extra transverse watertight bulkheads in the cargo region because length is 140 meters with no damage stability calculations."}
+{"chunk_id": "chunk-1116", "query": "How many transverse watertight bulkheads are required for a 130m ship without damage stability calculations?"}
+{"chunk_id": "chunk-1116", "query": "how many transverse bulkheads do we need for a 130m ship"}
+{"chunk_id": "chunk-1118", "query": "Routed all bulkhead cable penetrations through standard transit frames to preserve watertightness."}
+{"chunk_id": "chunk-1118", "query": "What are the requirements for minimizing and sealing penetrations in watertight bulkheads?"}
+{"chunk_id": "chunk-1118", "query": "how do we seal pipe and cable penetrations in watertight bulkheads"}
+{"chunk_id": "chunk-1130", "query": "Omitted the double bottom in the aft liquid tanks since those compartments are used solely for heavy fuel oil."}
+{"chunk_id": "chunk-1130", "query": "Is a double bottom required in watertight compartments used exclusively for carrying liquids?"}
+{"chunk_id": "chunk-1130", "query": "do we need a double bottom inside liquid tanks"}
+{"chunk_id": "chunk-1170", "query": "We swapped out a standard steel plate for a steel sandwich panel in this zone, need to check compliance."}
+{"chunk_id": "chunk-1170", "query": "Can we use steel sandwich panels instead of traditional stiffened steel plating?"}
+{"chunk_id": "chunk-1170", "query": "Putting in a sandwich panel here, hope the fire safety and strength rules are met."}
+{"chunk_id": "chunk-1182", "query": "Updated the corrosion addition calculation to take the maximum value when web and flange differ."}
+{"chunk_id": "chunk-1182", "query": "How is the total corrosion addition calculated for stainless clad steel members?"}
+{"chunk_id": "chunk-1182", "query": "What's the rule for max corrosion addition on stiffener webs and flanges?"}
+{"chunk_id": "chunk-1183", "query": "Applied a 1.0 mm corrosion addition for all structural members inside the ballast water tanks."}
+{"chunk_id": "chunk-1183", "query": "What is the required corrosion addition for members inside ballast water tanks?"}
+{"chunk_id": "chunk-1183", "query": "Do ballast tanks need a 1mm corrosion margin on all internal members?"}
+{"chunk_id": "chunk-1189", "query": "Changed deck longitudinals to be continuous through transverse members within 0.8 L."}
+{"chunk_id": "chunk-1189", "query": "Are longitudinal stiffeners required to be continuous through transverse members in this region?"}
+{"chunk_id": "chunk-1189", "query": "Do we have to run the bottom longitudinals continuously through the floors here?"}
+{"chunk_id": "chunk-1199", "query": "Added docking brackets on the centreline girder midway between the floors."}
+{"chunk_id": "chunk-1199", "query": "Where should docking brackets be positioned relative to the floors?"}
+{"chunk_id": "chunk-1199", "query": "Do we need docking brackets on the centerline girder and how are they tied in?"}
+{"chunk_id": "chunk-1202", "query": "Increased aft peak bulkhead plating thickness to 1.6 times the base requirement around the stern tube."}
+{"chunk_id": "chunk-1202", "query": "What is the required thickness increase for the aft peak bulkhead plating where the stern tube penetrates?"}
+{"chunk_id": "chunk-1202", "query": "How much thicker does the aft peak bulkhead need to be around the stern tube cutout?"}
+{"chunk_id": "chunk-1207", "query": "Reduced manholes in the engine room double bottom floors near seatings to the absolute minimum."}
+{"chunk_id": "chunk-1207", "query": "Are there restrictions on manhole placement and quantity in engine room floors near machinery seatings?"}
+{"chunk_id": "chunk-1207", "query": "Can we cut more manholes into the engine room floors close to the main engine seating?"}
+{"chunk_id": "chunk-1235", "query": "Aligned corrugations on both sides where the corrugated bulkhead intersects primary supporting members."}
+{"chunk_id": "chunk-1235", "query": "What are the alignment and support requirements for corrugated bulkheads intersecting primary members or stools?"}
+{"chunk_id": "chunk-1235", "query": "How do we tie the corrugated bulkhead ends into the floors and girders below?"}
+{"chunk_id": "chunk-1237", "query": "We need to ensure air and drain holes maintain an a/b ratio between 0.5 and 1.0 in fatigue-prone zones and stay at least 200 mm away from bracket toes."}
+{"chunk_id": "chunk-1237", "query": "Where should we place drain holes relative to the end brackets to avoid high stress areas?"}
+{"chunk_id": "chunk-1237", "query": "Keep air holes and scallops away from bracket toes, and make sure the a/b ratio is right in fatigue areas."}
+{"chunk_id": "chunk-1262", "query": "Check that the local scantling calculations for horizontal plating use the EPP mid-length for the x-coordinate and the lower edge for the z-coordinate."}
+{"chunk_id": "chunk-1262", "query": "Where exactly is the load calculation point located for yielding checks on different framing types?"}
+{"chunk_id": "chunk-1262", "query": "Which coordinates do we use for the LCP when running the plate yielding check?"}
+{"chunk_id": "chunk-1295", "query": "Apply still water loads for static scenarios and add dynamic loads for combined load cases, noting that container ships follow specific vertical wave bending rules."}
+{"chunk_id": "chunk-1295", "query": "How should we combine static and dynamic hull girder loads for our design scenarios?"}
+{"chunk_id": "chunk-1295", "query": "Just use the still water stuff for static cases, and add the wave loads for combined ones (except for box boats where Pt.5 Ch.2 applies)."}
+{"chunk_id": "chunk-1297", "query": "Ensure the still water bending moment and shear force distributions used for fatigue assessment reflect typical operational loading conditions defined in Pt.5."}
+{"chunk_id": "chunk-1297", "query": "What loading conditions should be assumed for the still water input in a fatigue assessment?"}
+{"chunk_id": "chunk-1297", "query": "Use normal operational loading profiles for the fatigue bending moments."}
+{"chunk_id": "chunk-1380", "query": "Verify that the vertical extent of higher strength steel in the deck zone meets the formula requirement using z1 and the bending stresses."}
+{"chunk_id": "chunk-1380", "query": "How high up the side shell do we need to extend the higher strength steel from the baseline?"}
+{"chunk_id": "chunk-1380", "query": "Make sure the higher tensile steel goes far enough up the deck and bottom, and keep it continuous longitudinally until the stress drops to mild steel levels."}
+{"chunk_id": "chunk-1392", "query": "Calculate the total hull girder shear stress including torsional moment effects for ships with large deck openings to ensure it remains below the permissible limit."}
+{"chunk_id": "chunk-1392", "query": "How do we account for torsional moments when checking shear stresses on a ship with massive deck openings?"}
+{"chunk_id": "chunk-1392", "query": "Don't forget to add the torsional shear to the still water and wave shear for ships with big hatch openings."}
+{"chunk_id": "chunk-1416", "query": "Update the minimum net thickness of the side shell plating between TSC + 4.6 m and TSC + 6.9 m to use coefficient b = 0.025."}
+{"chunk_id": "chunk-1416", "query": "What are the minimum plate thickness requirements for different hull locations and tanks?"}
+{"chunk_id": "chunk-1416", "query": "Check the minimum plate thickness table for the bottom and sides—the rule changed the coefficients for different vertical zones."}
+{"chunk_id": "chunk-1423", "query": "Recalculate the net thickness for built-up corrugated bulkhead flanges and webs using the formula for different plate thicknesses and design load sets."}
+{"chunk_id": "chunk-1423", "query": "How do we calculate the required section modulus and plate thickness for corrugated bulkheads under lateral pressure?"}
+{"chunk_id": "chunk-1423", "query": "Make sure to use the correct corrugation thickness formula when the flange and web plates are different sizes."}
+{"chunk_id": "chunk-1425", "query": "We need to update the transverse bilge plate thickness calculation so it matches the adjacent bottom and side plates."}
+{"chunk_id": "chunk-1425", "query": "How should the net thickness of transversely stiffened bilge plating be determined?"}
+{"chunk_id": "chunk-1425", "query": "Bilge plate thickness must follow the adjacent bottom and side plating rules, right?"}
+{"chunk_id": "chunk-1427", "query": "We've increased the shell plate thickness near the bulb and anchor handling areas per the stem plating rules."}
+{"chunk_id": "chunk-1427", "query": "How thick must the shell plating be in areas prone to anchor and chain cable contact?"}
+{"chunk_id": "chunk-1427", "query": "Do we need extra thick plates around the anchor contact zones?"}
+{"chunk_id": "chunk-1431", "query": "Check the minimum net section modulus calculations for stiffeners under lateral pressure using the correct bending moment and stress coefficients."}
+{"chunk_id": "chunk-1431", "query": "What is the formula for the minimum net section modulus of a stiffener subjected to lateral pressure?"}
+{"chunk_id": "chunk-1431", "query": "How do we figure out the required section modulus for stiffeners carrying lateral loads?"}
+{"chunk_id": "chunk-1433", "query": "The yield stress of the stiffener exceeds the attached plate by over 35%, so we must apply the special material criteria."}
+{"chunk_id": "chunk-1433", "query": "What rule applies when the stiffener material has a much higher yield stress than the plate?"}
+{"chunk_id": "chunk-1433", "query": "Do we need extra checks if the stiffener steel is way stronger than the plate it's welded to?"}
+{"chunk_id": "chunk-1438", "query": "Ensure the primary supporting member section modulus and shear area comply with the maximum values for all design load sets."}
+{"chunk_id": "chunk-1438", "query": "How do I calculate the required section modulus and shear area for primary supporting members under lateral pressure?"}
+{"chunk_id": "chunk-1438", "query": "What are the bending and shear area formulas for primary supporting members?"}
+{"chunk_id": "chunk-1466", "query": "We updated the end bulkhead and deckhouse side minimum net thicknesses based on a ship length of 70 meters."}
+{"chunk_id": "chunk-1466", "query": "What are the minimum plate thickness requirements for end bulkheads on ships over 65 meters?"}
+{"chunk_id": "chunk-1466", "query": "How thick do deckhouse side plates and end bulkheads need to be for our vessel length?"}
+{"chunk_id": "chunk-1536", "query": "We are using an equivalent plate panel width for buckling checks where the plate thickness varies across the width."}
+{"chunk_id": "chunk-1536", "query": "How is the equivalent plate panel width calculated when the plate thickness changes across the panel?"}
+{"chunk_id": "chunk-1536", "query": "What width should we use for buckling analysis if the plate thickness isn't constant across the panel?"}
+{"chunk_id": "chunk-1551", "query": "The stiffener spacing varies within this panel, so we need to run separate buckling calculations for each configuration."}
+{"chunk_id": "chunk-1551", "query": "How should stiffened panels with varying stiffener properties or spacing be modelled for direct strength analysis?"}
+{"chunk_id": "chunk-1551", "query": "Do we model every stiffener configuration separately when spacing changes in a buckling panel?"}
+{"chunk_id": "chunk-1827", "query": "We updated the fore deck small hatch cover scantlings and coaming stiffener layout per the table."}
+{"chunk_id": "chunk-1827", "query": "What are the plate thickness and stiffener requirements for small rectangular steel hatch covers on the fore deck?"}
+{"chunk_id": "chunk-1827", "query": "Check if these small fore deck hatch covers meet the standard plate thickness and stiffener sizes."}
+{"chunk_id": "chunk-1831", "query": "The hinge location on the fore deck small hatches was moved to the forward edge to protect against green water."}
+{"chunk_id": "chunk-1831", "query": "Where should we position the hinges on small hatch covers located on the exposed fore deck?"}
+{"chunk_id": "chunk-1831", "query": "Make sure the small hatch hinges are facing forward so green water slams them shut."}
+{"chunk_id": "chunk-1880", "query": "We added a buckling check for all hatch cover plating and primary supporting member webs."}
+{"chunk_id": "chunk-1880", "query": "What are the specific slenderness and buckling requirements for hatch cover structures and web panels?"}
+{"chunk_id": "chunk-1880", "query": "Do we need to run a buckling assessment for the cargo hatch covers and their supporting webs?"}
+{"chunk_id": "chunk-2024", "query": "We changed the intermittent weld arrangement near the tank boundary and added leak stoppers."}
+{"chunk_id": "chunk-2024", "query": "When can we use chain or staggered intermittent fillet welds on watertight and tank boundaries?"}
+{"chunk_id": "chunk-2024", "query": "Make sure there are leak stoppers at the ends of intermittent welds hitting the tank boundary."}
+{"chunk_id": "chunk-2025", "query": "The sizing factor f3 for the one side continuous weld was set to 2.0 based on intermittent weld requirements."}
+{"chunk_id": "chunk-2025", "query": "How do we calculate the required size for a one side continuous fillet weld?"}
+{"chunk_id": "chunk-2025", "query": "What f3 multiplier do we use for one side continuous welds equivalent to intermittent ones?"}
+{"chunk_id": "chunk-2042", "query": "We updated the weld leg length and detailing for the bilge keel ground bar connection."}
+{"chunk_id": "chunk-2042", "query": "What are the required fillet weld leg lengths for connecting the bilge keel and ground bar to the hull?"}
+{"chunk_id": "chunk-2042", "query": "Check that the bilge keel weld sizes match the as-built thickness requirements at the ends."}
+{"chunk_id": "chunk-2044", "query": "We recalculated the weld size for the pillars and cross-ties based on the maximum tensile design force and acceptance criteria."}
+{"chunk_id": "chunk-2044", "query": "How do I determine the minimum weld leg length for pillars and cross-ties subjected to tensile stress?"}
+{"chunk_id": "chunk-2044", "query": "What is the formula for pillar and cross-tie weld sizing under tension loading?"}
+{"chunk_id": "chunk-2061", "query": "We added a rudder trunk stuffing box and ensured bearing wear can be measured without lifting the blade."}
+{"chunk_id": "chunk-2061", "query": "What are the design requirements for rudder carriers, bearing accessibility, and trunk sealing arrangements?"}
+{"chunk_id": "chunk-2061", "query": "Check if the rudder bearings can be inspected for wear without dismantling the whole steering gear."}
+{"chunk_id": "chunk-2072", "query": "We need to update the rudder stock scantling calculation to include the von Mises stress limit of 118 / k for combined torque and bending."}
+{"chunk_id": "chunk-2072", "query": "What is the maximum allowable von Mises stress for a rudder stock subjected to both bending and torsion?"}
+{"chunk_id": "chunk-2072", "query": "Check if the rudder stock von Mises stress exceeds 118 over k under combined loads."}
+{"chunk_id": "chunk-2146", "query": "The inclining test report must now include the signatures of both the person responsible and the classification society representative."}
+{"chunk_id": "chunk-2146", "query": "Who needs to sign and endorse the lightweight survey and inclining test report?"}
+{"chunk_id": "chunk-2146", "query": "Make sure the surveyor signs off on the inclining test paperwork."}
+{"chunk_id": "chunk-2180", "query": "We applied static and dynamic shear load pressures on the hopper tank and lower stool plating for the bulk carrier FE assessment."}
+{"chunk_id": "chunk-2180", "query": "How should shear load pressures on hopper tanks and lower stools be calculated for FE strength and fatigue analysis of bulk carriers?"}
+{"chunk_id": "chunk-2180", "query": "Include gravitational shear loads on lower stools and hopper tanks in the bulk carrier FE model."}
+{"chunk_id": "chunk-2227", "query": "The net thickness and section modulus formulas for longitudinally stiffened inner bottom plating have been updated for design load sets BC-9 and BC-10."}
+{"chunk_id": "chunk-2227", "query": "What are the scantling formulas for inner bottom plating and stiffeners under design load sets BC-9 and BC-10?"}
+{"chunk_id": "chunk-2227", "query": "Check inner bottom plate thickness and stiffener section modulus against steel coil loading requirements for BC-9."}
+{"chunk_id": "chunk-2376", "query": "We added three-course guard rails with max 230 mm bottom spacing for the Great Lakes bulk carrier bulwark design."}
+{"chunk_id": "chunk-2376", "query": "What are the specific crew protection and guard rail height requirements for Great Lakes bulk carriers?"}
+{"chunk_id": "chunk-2376", "query": "The bulwark height can be dropped to 900 mm on this Great Lakes bulk carrier, right?"}
+{"chunk_id": "chunk-2462", "query": "The lashing arrangement drawing was revised to show single lashing elements attached to the lower corner castings of the containers."}
+{"chunk_id": "chunk-2462", "query": "How should single lashings be attached to containers stowed on deck without lateral rigid supports?"}
+{"chunk_id": "chunk-2462", "query": "Make sure vertical lashings have enough slack to account for twistlock clearance."}
+{"chunk_id": "chunk-2538", "query": "We included load combinations LC1 through LC5 in the global FE racking analysis for the RO/RO ship primary supporting members."}
+{"chunk_id": "chunk-2538", "query": "What load patterns must be included in the global FE racking assessment for RO/RO ship primary supporting members?"}
+{"chunk_id": "chunk-2538", "query": "Check the global FE model for LC1 to LC5 load combinations on the RO/RO structure."}
+{"chunk_id": "chunk-2574", "query": "We added a direct strength analysis of the bottom structure for docking loads since this passenger ship has a very high docking weight."}
+{"chunk_id": "chunk-2574", "query": "What acceptance criteria apply to direct FE analysis of the bottom structure during docking for large passenger ships?"}
+{"chunk_id": "chunk-2574", "query": "Do we need a special bottom check for docking blocks on this passenger vessel?"}
+{"chunk_id": "chunk-2576", "query": "We applied deck pressure loads above the bulkhead deck to balance the steel weight and displacement for the transverse strength model."}
+{"chunk_id": "chunk-2576", "query": "Which load cases should be used for the transverse strength analysis of passenger ships?"}
+{"chunk_id": "chunk-2576", "query": "How do we set up the dynamic loads for racking analysis on passenger ship decks?"}
+{"chunk_id": "chunk-2622", "query": "We added the CSR notation to the tanker drawing since its length between perpendiculars is over 150 meters."}
+{"chunk_id": "chunk-2622", "query": "When is the additional CSR notation mandatory for oil and chemical tankers?"}
+{"chunk_id": "chunk-2622", "query": "Do combination carriers need to meet bulk carrier design rules alongside tanker rules?"}
+{"chunk_id": "chunk-2625", "query": "We updated the corrugated bulkhead design to include a lower stool since the moulded depth exceeds 16 meters."}
+{"chunk_id": "chunk-2625", "query": "When is a lower stool required for vertically corrugated bulkheads in oil tankers?"}
+{"chunk_id": "chunk-2625", "query": "What are the steel grade and material yield strength requirements for inner bottom plating near corrugations without a stool?"}
+{"chunk_id": "chunk-2626", "query": "We updated the emergency towing arrangement capacity to 2,000 kN on the aft deck layout for this 60,000 dwt tanker."}
+{"chunk_id": "chunk-2626", "query": "What is the required working strength and minimum breaking load for emergency towing arrangements on a 60,000 dwt tanker?"}
+{"chunk_id": "chunk-2626", "query": "What load and stress limits must we use when checking the structural strength of the emergency towing strong point?"}
+{"chunk_id": "chunk-2632", "query": "We added a fine mesh FE analysis for the connection between the corrugation and inner bottom because no lower stool is fitted."}
+{"chunk_id": "chunk-2632", "query": "What fine mesh analysis and acceptance criteria apply to corrugated bulkheads without lower stools?"}
+{"chunk_id": "chunk-2632", "query": "Which finite element analysis procedures are required for oil tankers over 90 meters long?"}
+{"chunk_id": "chunk-3614", "query": "We modified the cylindrical type C tank supports to ensure the saddles cover at least 140 degrees of the circumference."}
+{"chunk_id": "chunk-3614", "query": "What are the design requirements for saddles and supporting members of cylindrical type C tanks?"}
+{"chunk_id": "chunk-3614", "query": "Do horizontal type C tanks need to be supported by just two saddles?"}
+{"chunk_id": "chunk-3889", "query": "We scheduled the winch function and static bollard pull tests according to the approved on-board test procedure."}
+{"chunk_id": "chunk-3889", "query": "What testing procedures and safety functionalities must be verified for anchor handling and towing winches before service?"}
+{"chunk_id": "chunk-3889", "query": "How do we prove the structural integrity of the winch foundations during sea trials?"}
+{"chunk_id": "chunk-3920", "query": "We moved the discharge outlets to keep the 8-meter rescue zone completely clear and free of obstructions."}
+{"chunk_id": "chunk-3920", "query": "What are the specific lighting, dimension, and clearance requirements for rescue zones on standby vessels?"}
+{"chunk_id": "chunk-3920", "query": "How far down from the waterline must the ship side be free of discharges near the rescue zone?"}
+{"chunk_id": "chunk-4013", "query": "Updated ballast tank boundary scantlings to account for flooded draft and air pipe height."}
+{"chunk_id": "chunk-4013", "query": "What pressure head should we use for ballast tank boundaries when air pipes exceed the deepest submerged waterline?"}
+{"chunk_id": "chunk-4013", "query": "Ballast tank walls need to take the flooded waterline pressure if the air vent goes that high."}
+{"chunk_id": "chunk-4080", "query": "Added note in the classification certificate appendix that the seismic winch frame acts as deck pillar support."}
+{"chunk_id": "chunk-4080", "query": "What are the strength requirements when a seismic winch acts as structural hull support for the decks?"}
+{"chunk_id": "chunk-4080", "query": "The winch frame is acting as a pillar between decks, so we must check it against main structure criteria and note it in the MO."}
+{"chunk_id": "chunk-4378", "query": "Installed two independent bilge pumps for the unlimited service manned barge."}
+{"chunk_id": "chunk-4378", "query": "What are the drainage and bilge system requirements for manned barges in unlimited service?"}
+{"chunk_id": "chunk-4378", "query": "We need two power bilge pumps on this unlimited service manned barge, and the main one can't double as a fire pump."}
+{"chunk_id": "chunk-4447", "query": "Included emergency lighting in all fish processing areas and control rooms outside the machinery spaces."}
+{"chunk_id": "chunk-4447", "query": "Where is emergency lighting specifically required on a fishing vessel besides the standard machinery spaces?"}
+{"chunk_id": "chunk-4447", "query": "Got to add emergency lights in the fish handling and processing rooms and control stations too."}
+{"chunk_id": "chunk-4457", "query": "Calculated the water-on-deck heeling moment assuming the well is flooded up to the bulwark top without freeing port effects."}
+{"chunk_id": "chunk-4457", "query": "How should the heeling moment due to water on deck be calculated regarding bulwarks and freeing ports?"}
+{"chunk_id": "chunk-4457", "query": "Assume the deck well is full up to the bulwark and ignore freeing ports when figuring out that water on deck heeling moment."}
