@@ -5,3 +5,4 @@
 .gcloudignore
 __pycache__/
 *.pyc
+eval/cache/
