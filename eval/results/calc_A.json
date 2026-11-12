@@ -1,0 +1,1702 @@
+{
+ "summary": {
+  "condition": "A",
+  "label": "LLM calculates from rule excerpts as stored (formulas missing)",
+  "runs": 3,
+  "questions": 28,
+  "accuracy": 25.0,
+  "accuracy_min": 25.0,
+  "accuracy_max": 25.0,
+  "easy": 16.666666666666668,
+  "medium": 22.22222222222222,
+  "hard": 0.0,
+  "refuse": 100.0,
+  "clause_ok": 66.66666666666667,
+  "fabricated": 0,
+  "refuse_total": 12,
+  "errors": 0,
+  "seconds": 1.754404761904762
+ },
+ "records": [
+  {
+   "status": "calculated",
+   "value": 0.72,
+   "clause": "Pt.3 Ch.3 Sec.1 [2.2]",
+   "reason": "",
+   "raw": {
+    "value": 0.72,
+    "unit": "",
+    "clause": "Pt.3 Ch.3 Sec.1 [2.2]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 3.53,
+   "run": 1,
+   "id": "c01",
+   "difficulty": "easy",
+   "correct": true,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 0.78,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2] Table 2",
+   "reason": "",
+   "raw": {
+    "value": 0.78,
+    "unit": "",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2] Table 2",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.79,
+   "run": 1,
+   "id": "c02",
+   "difficulty": "medium",
+   "correct": true,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 0.68,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2] Table 2",
+   "reason": "",
+   "raw": {
+    "value": 0.68,
+    "unit": "",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2] Table 2",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.51,
+   "run": 1,
+   "id": "c03",
+   "difficulty": "medium",
+   "correct": true,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+   "reason": "Missing lateral pressure P and elementary panel dimensions a and b required by the formula in Pt.3 Ch.6 Sec.4 [1.1.1] or additional parameters for minimum thickness.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+    "refuse": true,
+    "reason": "Missing lateral pressure P and elementary panel dimensions a and b required by the formula in Pt.3 Ch.6 Sec.4 [1.1.1] or additional parameters for minimum thickness."
+   },
+   "seconds": 1.71,
+   "run": 1,
+   "id": "c04",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+   "reason": "Rule length L = 320 m exceeds the applicability range for length in the standard table or required values (a, b) and lateral pressure for weather deck plate thickness calculation are not provided.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+    "refuse": true,
+    "reason": "Rule length L = 320 m exceeds the applicability range for length in the standard table or required values (a, b) and lateral pressure for weather deck plate thickness calculation are not provided."
+   },
+   "seconds": 2.15,
+   "run": 1,
+   "id": "c05",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 7.0,
+   "clause": "Pt.3 Ch.6 Sec.3 [1.1.1]",
+   "reason": "",
+   "raw": {
+    "value": 7.0,
+    "unit": "mm",
+    "clause": "Pt.3 Ch.6 Sec.3 [1.1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.37,
+   "run": 1,
+   "id": "c06",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "Pt.3 Ch.6 Sec.3 [1.1]",
+   "reason": "Missing stiffener spacing or elementary plate panel breadth (s or b) required for minimum thickness calculation of inner bottom plating in cargo spaces loaded through cargo hatches.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "Pt.3 Ch.6 Sec.3 [1.1]",
+    "refuse": true,
+    "reason": "Missing stiffener spacing or elementary plate panel breadth (s or b) required for minimum thickness calculation of inner bottom plating in cargo spaces loaded through cargo hatches."
+   },
+   "seconds": 1.57,
+   "run": 1,
+   "id": "c07",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "Missing inputs or cannot calculate automatically with provided rule excerpts.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "",
+    "refuse": true,
+    "reason": "Missing inputs or cannot calculate automatically with provided rule excerpts."
+   },
+   "seconds": 1.59,
+   "run": 1,
+   "id": "c08",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 11.23,
+   "clause": "Pt.3 Ch.6 Sec.4 [1.1.1]",
+   "reason": "",
+   "raw": {
+    "value": 11.23,
+    "unit": "mm",
+    "clause": "Pt.3 Ch.6 Sec.4 [1.1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.59,
+   "run": 1,
+   "id": "c09",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1]",
+   "reason": "Missing plate breadth b, stiffener spacing s, or specific formula parameters for DNV Pt.3 Ch.6 Sec.4 [1.1] plating net thickness calculation.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1]",
+    "refuse": true,
+    "reason": "Missing plate breadth b, stiffener spacing s, or specific formula parameters for DNV Pt.3 Ch.6 Sec.4 [1.1] plating net thickness calculation."
+   },
+   "seconds": 1.55,
+   "run": 1,
+   "id": "c10",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "Input pressure unit N/mm2 does not match the rule formula requirement (kN/m2).",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "",
+    "refuse": true,
+    "reason": "Input pressure unit N/mm2 does not match the rule formula requirement (kN/m2)."
+   },
+   "seconds": 1.58,
+   "run": 1,
+   "id": "c11",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+   "reason": "Formula definition references variables not provided or fully extractable from excerpts (specifically missing formula equation text in excerpt [12] for plate thickness t).",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+    "refuse": true,
+    "reason": "Formula definition references variables not provided or fully extractable from excerpts (specifically missing formula equation text in excerpt [12] for plate thickness t)."
+   },
+   "seconds": 1.68,
+   "run": 1,
+   "id": "c12",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 313.2,
+   "clause": "Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "",
+   "raw": {
+    "value": 313.2,
+    "unit": "cm3",
+    "clause": "Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.49,
+   "run": 1,
+   "id": "c13",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "Bottom longitudinal with lateral pressure acting on the plate side and compressive hull girder stress does not have a direct Cs formula matching this combination in Table 3 or requires specific interpolation not fully provided in the simple excerpts.",
+   "raw": {
+    "value": null,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": true,
+    "reason": "Bottom longitudinal with lateral pressure acting on the plate side and compressive hull girder stress does not have a direct Cs formula matching this combination in Table 3 or requires specific interpolation not fully provided in the simple excerpts."
+   },
+   "seconds": 1.68,
+   "run": 1,
+   "id": "c14",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "Required intermediate values such as k for A36 steel or specific pressure application parameters are missing or the exact input combination needs more context from the rules.",
+   "raw": {
+    "value": null,
+    "unit": "cm3",
+    "clause": "",
+    "refuse": true,
+    "reason": "Required intermediate values such as k for A36 steel or specific pressure application parameters are missing or the exact input combination needs more context from the rules."
+   },
+   "seconds": 1.47,
+   "run": 1,
+   "id": "c15",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "Formula from DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2] requires values or coefficients not fully defined in the provided excerpts (specifically the net section modulus formula is cut off in the excerpt text).",
+   "raw": {
+    "value": null,
+    "unit": "cm3",
+    "clause": "",
+    "refuse": true,
+    "reason": "Formula from DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2] requires values or coefficients not fully defined in the provided excerpts (specifically the net section modulus formula is cut off in the excerpt text)."
+   },
+   "seconds": 1.68,
+   "run": 1,
+   "id": "c16",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "Required data for calculation is incomplete or outside range.",
+   "raw": {
+    "value": null,
+    "unit": "cm3",
+    "clause": "",
+    "refuse": true,
+    "reason": "Required data for calculation is incomplete or outside range."
+   },
+   "seconds": 1.61,
+   "run": 1,
+   "id": "c17",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "Insufficient input: The material factor k or specified minimum yield stress ReH is required to calculate the section modulus, although A36 steel corresponds to ReH = 355 N/mm2 (k = 0.72), the prompt lacks explicit k. Wait, A36 has ReH = 355 N/mm2 giving k = 0.72 from Table 2 in Sec.1. Let's provide the calculation or refuse if strictly missing. Actually, A36 is defined in [3] with ReH = 355 N/mm2, and Table 4 of Sec.1 gives k = 0.72. Let me re-read: 'If a required input is not given... refuse'. Since ReH for A36 is in the rules, it is given by reference. Let's calculate.",
+   "raw": {
+    "value": null,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": true,
+    "reason": "Insufficient input: The material factor k or specified minimum yield stress ReH is required to calculate the section modulus, although A36 steel corresponds to ReH = 355 N/mm2 (k = 0.72), the prompt lacks explicit k. Wait, A36 has ReH = 355 N/mm2 giving k = 0.72 from Table 2 in Sec.1. Let's provide the calculation or refuse if strictly missing. Actually, A36 is defined in [3] with ReH = 355 N/mm2, and Table 4 of Sec.1 gives k = 0.72. Let me re-read: 'If a required input is not given... refuse'. Since ReH for A36 is in the rules, it is given by reference. Let's calculate."
+   },
+   "seconds": 2.03,
+   "run": 1,
+   "id": "c18",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "Formula in clause [1.3] requires missing parameters (like Cw0, k, etc. or specific formula text not fully detailed in excerpts)",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": true,
+    "reason": "Formula in clause [1.3] requires missing parameters (like Cw0, k, etc. or specific formula text not fully detailed in excerpts)"
+   },
+   "seconds": 1.43,
+   "run": 1,
+   "id": "c19",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "Rule requirement in Pt.3 Ch.5 Sec.2 [1.3] relies on wave parameter Cw0 and rule length, but the provided excerpts do not contain the formula or the definition for Cw0 or the required section modulus formula for L < 90 m (beyond defining Cw0 = 5.7 + 0.0222L in [1.3], the full formula for Z is missing from the excerpts).",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": true,
+    "reason": "Rule requirement in Pt.3 Ch.5 Sec.2 [1.3] relies on wave parameter Cw0 and rule length, but the provided excerpts do not contain the formula or the definition for Cw0 or the required section modulus formula for L < 90 m (beyond defining Cw0 = 5.7 + 0.0222L in [1.3], the full formula for Z is missing from the excerpts)."
+   },
+   "seconds": 1.79,
+   "run": 1,
+   "id": "c20",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "Formula requires parameters not provided in the excerpts (specifically Cw0 and Z_0-n50 or similar components for the full calculation formula not completely disclosed in excerpt [7]).",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": true,
+    "reason": "Formula requires parameters not provided in the excerpts (specifically Cw0 and Z_0-n50 or similar components for the full calculation formula not completely disclosed in excerpt [7])."
+   },
+   "seconds": 1.8,
+   "run": 1,
+   "id": "c21",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "L exceeds the applicability range of the provided Cw0 formula or L > 300m rule requirement not fully specified in excerpts for this specific calculation",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": true,
+    "reason": "L exceeds the applicability range of the provided Cw0 formula or L > 300m rule requirement not fully specified in excerpts for this specific calculation"
+   },
+   "seconds": 1.69,
+   "run": 1,
+   "id": "c22",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "Formula not explicitly typed out in the excerpt.",
+   "raw": {
+    "value": null,
+    "unit": "m4",
+    "clause": "",
+    "refuse": true,
+    "reason": "Formula not explicitly typed out in the excerpt."
+   },
+   "seconds": 1.6,
+   "run": 1,
+   "id": "c23",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.5.1]",
+   "reason": "The requirement in [1.5.2] applies to self-propelled ships with length above 90 m and up to 350 m (or 500 m depending on wave parameter, but L = 420 m exceeds the standard applicability range for the standard rule formula or requires special case-by-case consideration as L > 300/350 m in various rule sections). Specifically, DNV rules for hull girder moment of inertia have limitations on L.",
+   "raw": {
+    "value": null,
+    "unit": "m4",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.5.1]",
+    "refuse": true,
+    "reason": "The requirement in [1.5.2] applies to self-propelled ships with length above 90 m and up to 350 m (or 500 m depending on wave parameter, but L = 420 m exceeds the standard applicability range for the standard rule formula or requires special case-by-case consideration as L > 300/350 m in various rule sections). Specifically, DNV rules for hull girder moment of inertia have limitations on L."
+   },
+   "seconds": 1.72,
+   "run": 1,
+   "id": "c24",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.1.5]",
+   "reason": "The application of extra high strength steel with ReH greater than 460 N/mm2 is outside the standard rule table or requires a case-by-case consideration (ReH = 500 N/mm2 given).",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.1.5]",
+    "refuse": true,
+    "reason": "The application of extra high strength steel with ReH greater than 460 N/mm2 is outside the standard rule table or requires a case-by-case consideration (ReH = 500 N/mm2 given)."
+   },
+   "seconds": 1.62,
+   "run": 1,
+   "id": "c25",
+   "difficulty": "refuse",
+   "correct": true,
+   "formula_ok": null,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.5.1]",
+   "reason": "The requirement in [1.5.2] applies to self propelled ships with length above 90 m. The given ship length is 80 m.",
+   "raw": {
+    "value": null,
+    "unit": "m4",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.5.1]",
+    "refuse": true,
+    "reason": "The requirement in [1.5.2] applies to self propelled ships with length above 90 m. The given ship length is 80 m."
+   },
+   "seconds": 1.63,
+   "run": 1,
+   "id": "c26",
+   "difficulty": "refuse",
+   "correct": true,
+   "formula_ok": null,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+   "reason": "Required inputs such as design pressure (P), hull girder stress (σhg), rule length (L), and panel dimensions (a, b) are missing.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+    "refuse": true,
+    "reason": "Required inputs such as design pressure (P), hull girder stress (σhg), rule length (L), and panel dimensions (a, b) are missing."
+   },
+   "seconds": 1.93,
+   "run": 1,
+   "id": "c27",
+   "difficulty": "refuse",
+   "correct": true,
+   "formula_ok": null,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "Missing required inputs: block coefficient CB or wave parameter Cw0, and service restriction factor fr.",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "",
+    "refuse": true,
+    "reason": "Missing required inputs: block coefficient CB or wave parameter Cw0, and service restriction factor fr."
+   },
+   "seconds": 1.7,
+   "run": 1,
+   "id": "c28",
+   "difficulty": "refuse",
+   "correct": true,
+   "formula_ok": null,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 0.72,
+   "clause": "Pt.3 Ch.3 Sec.1 Table 2",
+   "reason": "",
+   "raw": {
+    "value": 0.72,
+    "unit": "",
+    "clause": "Pt.3 Ch.3 Sec.1 Table 2",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.72,
+   "run": 2,
+   "id": "c01",
+   "difficulty": "easy",
+   "correct": true,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 0.78,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2] Table 2",
+   "reason": "",
+   "raw": {
+    "value": 0.78,
+    "unit": "",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2] Table 2",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.54,
+   "run": 2,
+   "id": "c02",
+   "difficulty": "medium",
+   "correct": true,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 0.68,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2] Table 2",
+   "reason": "",
+   "raw": {
+    "value": 0.68,
+    "unit": "",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2] Table 2",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.62,
+   "run": 2,
+   "id": "c03",
+   "difficulty": "medium",
+   "correct": true,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+   "reason": "Missing required input parameters: stiffener spacing s or elementary plate panel breadth b, and design lateral pressure P.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+    "refuse": true,
+    "reason": "Missing required input parameters: stiffener spacing s or elementary plate panel breadth b, and design lateral pressure P."
+   },
+   "seconds": 1.81,
+   "run": 2,
+   "id": "c04",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+   "reason": "Rule length L = 320 m exceeds the applicability range for length in the standard table or required inputs like panel dimensions (a, b) or design load are missing.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+    "refuse": true,
+    "reason": "Rule length L = 320 m exceeds the applicability range for length in the standard table or required inputs like panel dimensions (a, b) or design load are missing."
+   },
+   "seconds": 1.65,
+   "run": 2,
+   "id": "c05",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 7.035,
+   "clause": "Pt.3 Ch.6 Sec.3 [1.1.1]",
+   "reason": "",
+   "raw": {
+    "value": 7.035,
+    "unit": "mm",
+    "clause": "Pt.3 Ch.6 Sec.3 [1.1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.55,
+   "run": 2,
+   "id": "c06",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "Pt.3 Ch.6 Sec.3 [1.1]",
+   "reason": "Missing stiffener spacing or elementary plate panel breadth (s or b) required to evaluate the minimum thickness formula.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "Pt.3 Ch.6 Sec.3 [1.1]",
+    "refuse": true,
+    "reason": "Missing stiffener spacing or elementary plate panel breadth (s or b) required to evaluate the minimum thickness formula."
+   },
+   "seconds": 1.5,
+   "run": 2,
+   "id": "c07",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1]",
+   "reason": "Insufficient information to calculate: s (stiffener spacing) is missing, which is required to determine the elementary plate panel breadth b (or a/b ratio) for longitudinally stiffened plating.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1]",
+    "refuse": true,
+    "reason": "Insufficient information to calculate: s (stiffener spacing) is missing, which is required to determine the elementary plate panel breadth b (or a/b ratio) for longitudinally stiffened plating."
+   },
+   "seconds": 1.71,
+   "run": 2,
+   "id": "c08",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 11.23,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+   "reason": "",
+   "raw": {
+    "value": 11.23,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.69,
+   "run": 2,
+   "id": "c09",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1]",
+   "reason": "Missing inputs or cannot be fully solved with provided excerpts (missing spacing 's' or pressure/stress details specific to formula application beyond what is provided, or missing material factor k for D36 from excerpt [4] since D36 ReH = 355 N/mm2 giving k = 0.72).",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1]",
+    "refuse": true,
+    "reason": "Missing inputs or cannot be fully solved with provided excerpts (missing spacing 's' or pressure/stress details specific to formula application beyond what is provided, or missing material factor k for D36 from excerpt [4] since D36 ReH = 355 N/mm2 giving k = 0.72)."
+   },
+   "seconds": 1.83,
+   "run": 2,
+   "id": "c10",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "The design pressure unit in the rule is kN/m2 (or kPa), but 0.15 N/mm2 (150 kN/m2) is outside the typical rule pressure range or requires conversion not specified under single clause application. Furthermore, 'A36' corresponds to ReH = 355 N/mm2, but the required inputs like span or panel breadth 'b' in mm need exact mapping to rule parameters.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "",
+    "refuse": true,
+    "reason": "The design pressure unit in the rule is kN/m2 (or kPa), but 0.15 N/mm2 (150 kN/m2) is outside the typical rule pressure range or requires conversion not specified under single clause application. Furthermore, 'A36' corresponds to ReH = 355 N/mm2, but the required inputs like span or panel breadth 'b' in mm need exact mapping to rule parameters."
+   },
+   "seconds": 2.11,
+   "run": 2,
+   "id": "c11",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "Formula for plate thickness under lateral pressure [12] is missing from the provided DNV rule excerpts.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "",
+    "refuse": true,
+    "reason": "Formula for plate thickness under lateral pressure [12] is missing from the provided DNV rule excerpts."
+   },
+   "seconds": 1.52,
+   "run": 2,
+   "id": "c12",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 313.1,
+   "clause": "Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "",
+   "raw": {
+    "value": 313.1,
+    "unit": "cm3",
+    "clause": "Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.54,
+   "run": 2,
+   "id": "c13",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "Formula for stiffener section modulus is cut off in the provided rule excerpts.",
+   "raw": {
+    "value": null,
+    "unit": "cm3",
+    "clause": "",
+    "refuse": true,
+    "reason": "Formula for stiffener section modulus is cut off in the provided rule excerpts."
+   },
+   "seconds": 1.51,
+   "run": 2,
+   "id": "c14",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "Not enough input data to compute the required net section modulus (missing factors or specific parameters required by the formula in the excerpts, or calculation parameters incomplete).",
+   "raw": {
+    "value": null,
+    "unit": "cm3",
+    "clause": "",
+    "refuse": true,
+    "reason": "Not enough input data to compute the required net section modulus (missing factors or specific parameters required by the formula in the excerpts, or calculation parameters incomplete)."
+   },
+   "seconds": 1.58,
+   "run": 2,
+   "id": "c15",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "Missing inputs: material factor k or specific formula variables not fully evaluable without explicit formula string from excerpt",
+   "raw": {
+    "value": null,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": true,
+    "reason": "Missing inputs: material factor k or specific formula variables not fully evaluable without explicit formula string from excerpt"
+   },
+   "seconds": 1.82,
+   "run": 2,
+   "id": "c16",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "D32 steel material factor k is not provided in excerpt [4] (only 235: 1.00, 315: 0.78, 355: 0.72, 390: 0.66/0.68, 460: 0.62).",
+   "raw": {
+    "value": null,
+    "unit": "cm3",
+    "clause": "",
+    "refuse": true,
+    "reason": "D32 steel material factor k is not provided in excerpt [4] (only 235: 1.00, 315: 0.78, 355: 0.72, 390: 0.66/0.68, 460: 0.62)."
+   },
+   "seconds": 1.82,
+   "run": 2,
+   "id": "c17",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "Missing material yield stress ReH or material factor k for A36 steel in the prompt inputs for the section modulus formula calculation.",
+   "raw": {
+    "value": null,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": true,
+    "reason": "Missing material yield stress ReH or material factor k for A36 steel in the prompt inputs for the section modulus formula calculation."
+   },
+   "seconds": 1.64,
+   "run": 2,
+   "id": "c18",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "Missing required input or formula excerpt parameter in the provided rules (formula for minimum section modulus Z not fully specified in excerpt [7]).",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": true,
+    "reason": "Missing required input or formula excerpt parameter in the provided rules (formula for minimum section modulus Z not fully specified in excerpt [7])."
+   },
+   "seconds": 1.56,
+   "run": 2,
+   "id": "c19",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "Rule length L = 85 m is less than the applicable range for the formula in [1.3] or requires L > 90 m based on Ch.5 Sec.2 [1.5.1] context/wave parameter definition for standard rule length applicability.",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": true,
+    "reason": "Rule length L = 85 m is less than the applicable range for the formula in [1.3] or requires L > 90 m based on Ch.5 Sec.2 [1.5.1] context/wave parameter definition for standard rule length applicability."
+   },
+   "seconds": 1.83,
+   "run": 2,
+   "id": "c20",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "Formula requires parameters not provided in the excerpts (specifically Cw0/Cw and basic hull girder section modulus formula details beyond the general statement)",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": true,
+    "reason": "Formula requires parameters not provided in the excerpts (specifically Cw0/Cw and basic hull girder section modulus formula details beyond the general statement)"
+   },
+   "seconds": 1.68,
+   "run": 2,
+   "id": "c21",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "The rule formula in [1.3] requires Cw or Cw0, which for L > 300 m depends on parameters not provided in the rule excerpt.",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": true,
+    "reason": "The rule formula in [1.3] requires Cw or Cw0, which for L > 300 m depends on parameters not provided in the rule excerpt."
+   },
+   "seconds": 1.64,
+   "run": 2,
+   "id": "c22",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "Formula for minimum hull girder moment of inertia at midship is not fully provided in excerpt [8]",
+   "raw": {
+    "value": null,
+    "unit": "m4",
+    "clause": "",
+    "refuse": true,
+    "reason": "Formula for minimum hull girder moment of inertia at midship is not fully provided in excerpt [8]"
+   },
+   "seconds": 1.4,
+   "run": 2,
+   "id": "c23",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.5]",
+   "reason": "L = 420 m is outside the range for the standard formula or L > 350 m applicability limit for the hull girder moment of inertia rule excerpt provided.",
+   "raw": {
+    "value": null,
+    "unit": "m4",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.5]",
+    "refuse": true,
+    "reason": "L = 420 m is outside the range for the standard formula or L > 350 m applicability limit for the hull girder moment of inertia rule excerpt provided."
+   },
+   "seconds": 1.73,
+   "run": 2,
+   "id": "c24",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "Specified minimum yield stress ReH = 500 N/mm2 exceeds the maximum listed in DNV rules (460 N/mm2 for container ships or standard steels), and required input values such as design pressure P and span are not provided.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "",
+    "refuse": true,
+    "reason": "Specified minimum yield stress ReH = 500 N/mm2 exceeds the maximum listed in DNV rules (460 N/mm2 for container ships or standard steels), and required input values such as design pressure P and span are not provided."
+   },
+   "seconds": 1.73,
+   "run": 2,
+   "id": "c25",
+   "difficulty": "refuse",
+   "correct": true,
+   "formula_ok": null,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.5.1]",
+   "reason": "The requirement in [1.5.2] applies to self propelled ships with length above 90 m. The given ship length is 80 m, which is outside the applicable range.",
+   "raw": {
+    "value": null,
+    "unit": "m4",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.5.1]",
+    "refuse": true,
+    "reason": "The requirement in [1.5.2] applies to self propelled ships with length above 90 m. The given ship length is 80 m, which is outside the applicable range."
+   },
+   "seconds": 1.51,
+   "run": 2,
+   "id": "c26",
+   "difficulty": "refuse",
+   "correct": true,
+   "formula_ok": null,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1]",
+   "reason": "Required inputs such as design pressure (P), hull girder stress (σhg), and plate panel dimensions (a, b) are not provided.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1]",
+    "refuse": true,
+    "reason": "Required inputs such as design pressure (P), hull girder stress (σhg), and plate panel dimensions (a, b) are not provided."
+   },
+   "seconds": 1.45,
+   "run": 2,
+   "id": "c27",
+   "difficulty": "refuse",
+   "correct": true,
+   "formula_ok": null,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "Missing required inputs such as block coefficient CB or design draught TSC, or wave parameter details to calculate the minimum midship section modulus.",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "",
+    "refuse": true,
+    "reason": "Missing required inputs such as block coefficient CB or design draught TSC, or wave parameter details to calculate the minimum midship section modulus."
+   },
+   "seconds": 1.67,
+   "run": 2,
+   "id": "c28",
+   "difficulty": "refuse",
+   "correct": true,
+   "formula_ok": null,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 0.72,
+   "clause": "Pt.3 Ch.3 Sec.1 Table 2",
+   "reason": "",
+   "raw": {
+    "value": 0.72,
+    "unit": "",
+    "clause": "Pt.3 Ch.3 Sec.1 Table 2",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.71,
+   "run": 3,
+   "id": "c01",
+   "difficulty": "easy",
+   "correct": true,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 0.78,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2] Table 2",
+   "reason": "",
+   "raw": {
+    "value": 0.78,
+    "unit": "",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2] Table 2",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.7,
+   "run": 3,
+   "id": "c02",
+   "difficulty": "medium",
+   "correct": true,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 0.68,
+   "clause": "Pt.3 Ch.3 Sec.1 Table 2 footnote 1",
+   "reason": "",
+   "raw": {
+    "value": 0.68,
+    "unit": "",
+    "clause": "Pt.3 Ch.3 Sec.1 Table 2 footnote 1",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.56,
+   "run": 3,
+   "id": "c03",
+   "difficulty": "medium",
+   "correct": true,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+   "reason": "Required lateral pressure and panel dimensions (a and b) for bottom shell plating minimum thickness calculation are not provided.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+    "refuse": true,
+    "reason": "Required lateral pressure and panel dimensions (a and b) for bottom shell plating minimum thickness calculation are not provided."
+   },
+   "seconds": 3.32,
+   "run": 3,
+   "id": "c04",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+   "reason": "Rule length L = 320 m exceeds the applicability range for container ship or specific rule formula parameters are missing.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+    "refuse": true,
+    "reason": "Rule length L = 320 m exceeds the applicability range for container ship or specific rule formula parameters are missing."
+   },
+   "seconds": 1.6,
+   "run": 3,
+   "id": "c05",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 7.325,
+   "clause": "Pt.3 Ch.6 Sec.3 [1.1.1]",
+   "reason": "",
+   "raw": {
+    "value": 7.325,
+    "unit": "mm",
+    "clause": "Pt.3 Ch.6 Sec.3 [1.1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.42,
+   "run": 3,
+   "id": "c06",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "Pt.3 Ch.6 Sec.3 [1.1]",
+   "reason": "Missing stiffener spacing s or elementary plate panel breadth b required for the minimum thickness formula.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "Pt.3 Ch.6 Sec.3 [1.1]",
+    "refuse": true,
+    "reason": "Missing stiffener spacing s or elementary plate panel breadth b required for the minimum thickness formula."
+   },
+   "seconds": 1.7,
+   "run": 3,
+   "id": "c07",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+   "reason": "Insufficient input: missing parameters like stiffener spacing s or panel dimensions definitions required for the formula.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+    "refuse": true,
+    "reason": "Insufficient input: missing parameters like stiffener spacing s or panel dimensions definitions required for the formula."
+   },
+   "seconds": 1.75,
+   "run": 3,
+   "id": "c08",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 11.23,
+   "clause": "Pt.3 Ch.6 Sec.4 [1.1.1]",
+   "reason": "",
+   "raw": {
+    "value": 11.23,
+    "unit": "mm",
+    "clause": "Pt.3 Ch.6 Sec.4 [1.1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.61,
+   "run": 3,
+   "id": "c09",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1]",
+   "reason": "Missing stiffener spacing s or plate breadth b definition context for panel dimensions (a and b) in the formula.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1]",
+    "refuse": true,
+    "reason": "Missing stiffener spacing s or plate breadth b definition context for panel dimensions (a and b) in the formula."
+   },
+   "seconds": 1.67,
+   "run": 3,
+   "id": "c10",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "Missing plate breadth b (s is given as spacing, but plate dimensions a and b are needed for plating thickness calculation according to DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]).",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "",
+    "refuse": true,
+    "reason": "Missing plate breadth b (s is given as spacing, but plate dimensions a and b are needed for plating thickness calculation according to DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1])."
+   },
+   "seconds": 1.53,
+   "run": 3,
+   "id": "c11",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "Formula for plate thickness under lateral pressure [12] is incomplete in the provided rule text excerpts.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "",
+    "refuse": true,
+    "reason": "Formula for plate thickness under lateral pressure [12] is incomplete in the provided rule text excerpts."
+   },
+   "seconds": 1.71,
+   "run": 3,
+   "id": "c12",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 506.74,
+   "clause": "Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "",
+   "raw": {
+    "value": 506.74,
+    "unit": "cm3",
+    "clause": "Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.6,
+   "run": 3,
+   "id": "c13",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "Missing formula text in DNV excerpts for stiffener section modulus [1.1.2] to perform calculation.",
+   "raw": {
+    "value": null,
+    "unit": "cm3",
+    "clause": "",
+    "refuse": true,
+    "reason": "Missing formula text in DNV excerpts for stiffener section modulus [1.1.2] to perform calculation."
+   },
+   "seconds": 1.59,
+   "run": 3,
+   "id": "c14",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "Required intermediate values such as k or Cs for the specific stiffener configuration/load combination are not fully computable from the provided excerpts without more context or are outside the excerpted table range.",
+   "raw": {
+    "value": null,
+    "unit": "cm3",
+    "clause": "",
+    "refuse": true,
+    "reason": "Required intermediate values such as k or Cs for the specific stiffener configuration/load combination are not fully computable from the provided excerpts without more context or are outside the excerpted table range."
+   },
+   "seconds": 1.62,
+   "run": 3,
+   "id": "c15",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "Formula incomplete in rule text excerpt provided",
+   "raw": {
+    "value": null,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": true,
+    "reason": "Formula incomplete in rule text excerpt provided"
+   },
+   "seconds": 1.7,
+   "run": 3,
+   "id": "c16",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "D32 steel material factor k is needed for the section modulus formula in Pt.3 Ch.6 Sec.5 [1.1.2], but k is not directly provided in the text excerpts for D32 (only ReH=315 N/mm2 corresponding to k=0.78 is given in Table 2 of Sec.1 [2.2], while D32 is specified in Sec.1 [2.1] as ReH = 315 N/mm2). Wait, ReH for D32 is 315, so k = 0.78. Let's check if formula can be evaluated. Formula for section modulus Z = (s * l_bdg^2 * P * f_bdg) / (...) wait, the excerpt [15] doesn't show the full formula text for section modulus Z! Excerpt [14] starts with 'where:' and lists variables, but the actual formula is cut off before the equals sign. Therefore, refuse due to missing formula text in excerpts.",
+   "raw": {
+    "value": null,
+    "unit": "cm3",
+    "clause": "",
+    "refuse": true,
+    "reason": "D32 steel material factor k is needed for the section modulus formula in Pt.3 Ch.6 Sec.5 [1.1.2], but k is not directly provided in the text excerpts for D32 (only ReH=315 N/mm2 corresponding to k=0.78 is given in Table 2 of Sec.1 [2.2], while D32 is specified in Sec.1 [2.1] as ReH = 315 N/mm2). Wait, ReH for D32 is 315, so k = 0.78. Let's check if formula can be evaluated. Formula for section modulus Z = (s * l_bdg^2 * P * f_bdg) / (...) wait, the excerpt [15] doesn't show the full formula text for section modulus Z! Excerpt [14] starts with 'where:' and lists variables, but the actual formula is cut off before the equals sign. Therefore, refuse due to missing formula text in excerpts."
+   },
+   "seconds": 2.33,
+   "run": 3,
+   "id": "c17",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "Missing material yield stress ReH or material factor k for A36 steel in the prompt inputs for stiffener calculation.",
+   "raw": {
+    "value": null,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": true,
+    "reason": "Missing material yield stress ReH or material factor k for A36 steel in the prompt inputs for stiffener calculation."
+   },
+   "seconds": 1.85,
+   "run": 3,
+   "id": "c18",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "Formula for minimum midship section modulus (Z) is missing from the provided DNV rule excerpts.",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "",
+    "refuse": true,
+    "reason": "Formula for minimum midship section modulus (Z) is missing from the provided DNV rule excerpts."
+   },
+   "seconds": 1.46,
+   "run": 3,
+   "id": "c19",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "Rule length L = 85 m is less than 90 m where Cw0 formula differs or wave parameter depends on L > 90 m criteria, or L <= 90 m formula applies but let's check DNV Pt.3 Ch.5 Sec.2 [1.3]: Cw0 = 5.7 + 0.0222L for L <= 90 m. Wait, the rule excerpt [7] gives the formula but does not explicitly state the full Z formula text. Refused due to missing complete formula text in excerpts for Zgr.",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": true,
+    "reason": "Rule length L = 85 m is less than 90 m where Cw0 formula differs or wave parameter depends on L > 90 m criteria, or L <= 90 m formula applies but let's check DNV Pt.3 Ch.5 Sec.2 [1.3]: Cw0 = 5.7 + 0.0222L for L <= 90 m. Wait, the rule excerpt [7] gives the formula but does not explicitly state the full Z formula text. Refused due to missing complete formula text in excerpts for Zgr."
+   },
+   "seconds": 1.97,
+   "run": 3,
+   "id": "c20",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "Formula requires Cw which needs additional input or rule wave parameter, but let's check if excerpt [7] can be evaluated. Excerpt [7] says Z = ... but formula text is missing in excerpt [7]. Refusing due to incomplete excerpt text for the formula.",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": true,
+    "reason": "Formula requires Cw which needs additional input or rule wave parameter, but let's check if excerpt [7] can be evaluated. Excerpt [7] says Z = ... but formula text is missing in excerpt [7]. Refusing due to incomplete excerpt text for the formula."
+   },
+   "seconds": 2.15,
+   "run": 3,
+   "id": "c21",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "L exceeds the applicability range for the provided excerpt formula (L <= 300 m in the excerpt table or formula applicability).",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": true,
+    "reason": "L exceeds the applicability range for the provided excerpt formula (L <= 300 m in the excerpt table or formula applicability)."
+   },
+   "seconds": 1.85,
+   "run": 3,
+   "id": "c22",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "The formula for minimum moment of inertia midship requires the wave parameter and other specific inputs not fully computable or provided explicitly in the excerpts.",
+   "raw": {
+    "value": null,
+    "unit": "m4",
+    "clause": "",
+    "refuse": true,
+    "reason": "The formula for minimum moment of inertia midship requires the wave parameter and other specific inputs not fully computable or provided explicitly in the excerpts."
+   },
+   "seconds": 2.32,
+   "run": 3,
+   "id": "c23",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.5.1]",
+   "reason": "The requirement in [1.5.2] applies to self propelled ships with length above 90 m up to 350 m (or 500 m depending on table range, but rule [6] Cw formula restricts L to <= 350 or 500; moreover, L = 420 m exceeds the rule range for standard wave parameter formulations or typical applicability in this context).",
+   "raw": {
+    "value": null,
+    "unit": "m4",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.5.1]",
+    "refuse": true,
+    "reason": "The requirement in [1.5.2] applies to self propelled ships with length above 90 m up to 350 m (or 500 m depending on table range, but rule [6] Cw formula restricts L to <= 350 or 500; moreover, L = 420 m exceeds the rule range for standard wave parameter formulations or typical applicability in this context)."
+   },
+   "seconds": 2.5,
+   "run": 3,
+   "id": "c24",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "The yield stress 500 N/mm2 exceeds the maximum standard rolled steel yield stress of 460 N/mm2 covered by the rules (Pt.3 Ch.3 Sec.1 [2.1]), and specific inputs for lateral pressure and panel dimensions (a, b) required for plate thickness calculation are not provided.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "",
+    "refuse": true,
+    "reason": "The yield stress 500 N/mm2 exceeds the maximum standard rolled steel yield stress of 460 N/mm2 covered by the rules (Pt.3 Ch.3 Sec.1 [2.1]), and specific inputs for lateral pressure and panel dimensions (a, b) required for plate thickness calculation are not provided."
+   },
+   "seconds": 2.51,
+   "run": 3,
+   "id": "c25",
+   "difficulty": "refuse",
+   "correct": true,
+   "formula_ok": null,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.5.1]",
+   "reason": "The requirement in [1.5.2] applies to self propelled ships with length above 90 m. The given ship length is 80 m, which is outside the applicable range.",
+   "raw": {
+    "value": null,
+    "unit": "m4",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.5.1]",
+    "refuse": true,
+    "reason": "The requirement in [1.5.2] applies to self propelled ships with length above 90 m. The given ship length is 80 m, which is outside the applicable range."
+   },
+   "seconds": 2.1,
+   "run": 3,
+   "id": "c26",
+   "difficulty": "refuse",
+   "correct": true,
+   "formula_ok": null,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+   "reason": "Required inputs such as design pressure (P), hull girder stress (σhg), plate panel length (a), and breadth (b) are not provided.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+    "refuse": true,
+    "reason": "Required inputs such as design pressure (P), hull girder stress (σhg), plate panel length (a), and breadth (b) are not provided."
+   },
+   "seconds": 1.77,
+   "run": 3,
+   "id": "c27",
+   "difficulty": "refuse",
+   "correct": true,
+   "formula_ok": null,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "Missing inputs such as block coefficient CB, service restriction factor fr, rule length L (if L is not explicitly assigned from other context, but L=180m is given, wait - L=180m is given, but Cw0 and other parameters like CB or k are needed depending on formula). Let's check DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3] formula if available: rule snippet [7] mentions the requirement but cuts off the formula expression.",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": true,
+    "reason": "Missing inputs such as block coefficient CB, service restriction factor fr, rule length L (if L is not explicitly assigned from other context, but L=180m is given, wait - L=180m is given, but Cw0 and other parameters like CB or k are needed depending on formula). Let's check DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3] formula if available: rule snippet [7] mentions the requirement but cuts off the formula expression."
+   },
+   "seconds": 1.92,
+   "run": 3,
+   "id": "c28",
+   "difficulty": "refuse",
+   "correct": true,
+   "formula_ok": null,
+   "fabricated": false
+  }
+ ]
+}

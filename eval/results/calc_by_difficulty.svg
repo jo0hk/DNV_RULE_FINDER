@@ -1,0 +1,42 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 360' width='760' height='360' font-family='system-ui, -apple-system, Segoe UI, Malgun Gothic, sans-serif'>
+<rect width='100%' height='100%' fill='#fcfcfb'/>
+<text x='16' y='28' font-size='16' font-weight='600' fill='#0b0b0b'>Accuracy by question difficulty</text>
+<rect x='16' y='42' width='12' height='12' rx='3' fill='#2a78d6'/>
+<text x='34' y='52' font-size='12' fill='#0b0b0b'>A  LLM, chunk as stored</text>
+<rect x='196' y='42' width='12' height='12' rx='3' fill='#eb6834'/>
+<text x='214' y='52' font-size='12' fill='#0b0b0b'>B  LLM, formula text added</text>
+<rect x='376' y='42' width='12' height='12' rx='3' fill='#1baf7a'/>
+<text x='394' y='52' font-size='12' fill='#0b0b0b'>B2 LLM writes Python</text>
+<rect x='556' y='42' width='12' height='12' rx='3' fill='#eda100'/>
+<text x='574' y='52' font-size='12' fill='#0b0b0b'>C  LLM picks, engine calculates</text>
+<line x1='56' y1='310.0' x2='740' y2='310.0' stroke='#e4e3df' stroke-width='1'/>
+<text x='48' y='314.0' font-size='12' fill='#52514e' text-anchor='end'>0%</text>
+<line x1='56' y1='250.0' x2='740' y2='250.0' stroke='#e4e3df' stroke-width='1'/>
+<text x='48' y='254.0' font-size='12' fill='#52514e' text-anchor='end'>25%</text>
+<line x1='56' y1='190.0' x2='740' y2='190.0' stroke='#e4e3df' stroke-width='1'/>
+<text x='48' y='194.0' font-size='12' fill='#52514e' text-anchor='end'>50%</text>
+<line x1='56' y1='130.0' x2='740' y2='130.0' stroke='#e4e3df' stroke-width='1'/>
+<text x='48' y='134.0' font-size='12' fill='#52514e' text-anchor='end'>75%</text>
+<line x1='56' y1='70.0' x2='740' y2='70.0' stroke='#e4e3df' stroke-width='1'/>
+<text x='48' y='74.0' font-size='12' fill='#52514e' text-anchor='end'>100%</text>
+<path d='M85.5,310 v-36.00000000000001 a4,4 0 0 1 4,-4 h18 a4,4 0 0 1 4,4 v36.00000000000001 z' fill='#2a78d6'><title>A  LLM, chunk as stored, easy: 16.7%</title></path>
+<path d='M113.5,310 v-76.00000000000001 a4,4 0 0 1 4,-4 h18 a4,4 0 0 1 4,4 v76.00000000000001 z' fill='#eb6834'><title>B  LLM, formula text added, easy: 33.3%</title></path>
+<path d='M141.5,310 v-196.0 a4,4 0 0 1 4,-4 h18 a4,4 0 0 1 4,4 v196.0 z' fill='#1baf7a'><title>B2 LLM writes Python, easy: 83.3%</title></path>
+<path d='M169.5,310 v-236.0 a4,4 0 0 1 4,-4 h18 a4,4 0 0 1 4,4 v236.0 z' fill='#eda100'><title>C  LLM picks, engine calculates, easy: 100.0%</title></path>
+<text x='141.5' y='332' font-size='13' fill='#0b0b0b' text-anchor='middle'>easy</text>
+<path d='M256.5,310 v-49.33333333333333 a4,4 0 0 1 4,-4 h18 a4,4 0 0 1 4,4 v49.33333333333333 z' fill='#2a78d6'><title>A  LLM, chunk as stored, medium: 22.2%</title></path>
+<path d='M284.5,310 v-49.33333333333333 a4,4 0 0 1 4,-4 h18 a4,4 0 0 1 4,4 v49.33333333333333 z' fill='#eb6834'><title>B  LLM, formula text added, medium: 22.2%</title></path>
+<path d='M312.5,310 v-164.88888888888886 a4,4 0 0 1 4,-4 h18 a4,4 0 0 1 4,4 v164.88888888888886 z' fill='#1baf7a'><title>B2 LLM writes Python, medium: 70.4%</title></path>
+<path d='M340.5,310 v-236.0 a4,4 0 0 1 4,-4 h18 a4,4 0 0 1 4,4 v236.0 z' fill='#eda100'><title>C  LLM picks, engine calculates, medium: 100.0%</title></path>
+<text x='312.5' y='332' font-size='13' fill='#0b0b0b' text-anchor='middle'>medium</text>
+<path d='M427.5,310 v--2 a4,4 0 0 1 4,-4 h18 a4,4 0 0 1 4,4 v-2 z' fill='#2a78d6'><title>A  LLM, chunk as stored, hard: 0.0%</title></path>
+<path d='M455.5,310 v--2 a4,4 0 0 1 4,-4 h18 a4,4 0 0 1 4,4 v-2 z' fill='#eb6834'><title>B  LLM, formula text added, hard: 0.0%</title></path>
+<path d='M483.5,310 v-147.11111111111111 a4,4 0 0 1 4,-4 h18 a4,4 0 0 1 4,4 v147.11111111111111 z' fill='#1baf7a'><title>B2 LLM writes Python, hard: 63.0%</title></path>
+<path d='M511.5,310 v-236.0 a4,4 0 0 1 4,-4 h18 a4,4 0 0 1 4,4 v236.0 z' fill='#eda100'><title>C  LLM picks, engine calculates, hard: 100.0%</title></path>
+<text x='483.5' y='332' font-size='13' fill='#0b0b0b' text-anchor='middle'>hard</text>
+<path d='M598.5,310 v-236.0 a4,4 0 0 1 4,-4 h18 a4,4 0 0 1 4,4 v236.0 z' fill='#2a78d6'><title>A  LLM, chunk as stored, refuse: 100.0%</title></path>
+<path d='M626.5,310 v-216.0 a4,4 0 0 1 4,-4 h18 a4,4 0 0 1 4,4 v216.0 z' fill='#eb6834'><title>B  LLM, formula text added, refuse: 91.7%</title></path>
+<path d='M654.5,310 v-196.0 a4,4 0 0 1 4,-4 h18 a4,4 0 0 1 4,4 v196.0 z' fill='#1baf7a'><title>B2 LLM writes Python, refuse: 83.3%</title></path>
+<path d='M682.5,310 v-236.0 a4,4 0 0 1 4,-4 h18 a4,4 0 0 1 4,4 v236.0 z' fill='#eda100'><title>C  LLM picks, engine calculates, refuse: 100.0%</title></path>
+<text x='654.5' y='332' font-size='13' fill='#0b0b0b' text-anchor='middle'>refuse</text>
+</svg>
