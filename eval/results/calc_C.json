@@ -1,0 +1,640 @@
+[
+ {
+  "status": "calculated",
+  "seconds": 2.82,
+  "call": {
+   "name": "material_factor",
+   "args": {
+    "reh": 355
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 0.72,
+  "formula": "material_factor",
+  "id": "c01",
+  "difficulty": "easy",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.53,
+  "call": {
+   "name": "material_factor",
+   "args": {
+    "reh": 315
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 0.78,
+  "formula": "material_factor",
+  "id": "c02",
+  "difficulty": "medium",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.49,
+  "call": {
+   "name": "material_factor",
+   "args": {
+    "reh": 390,
+    "fatigue_assessed": "no"
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 0.68,
+  "formula": "material_factor",
+  "id": "c03",
+  "difficulty": "medium",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.56,
+  "call": {
+   "name": "min_plate_thickness",
+   "args": {
+    "reh": 315,
+    "length": 180,
+    "location": "shell_bottom"
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 10.064009345786545,
+  "formula": "min_plate_thickness",
+  "id": "c04",
+  "difficulty": "medium",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.48,
+  "call": {
+   "name": "min_plate_thickness",
+   "args": {
+    "reh": 355,
+    "length": 320,
+    "location": "deck_weather_strength"
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 9.591168824543143,
+  "formula": "min_plate_thickness",
+  "id": "c05",
+  "difficulty": "hard",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.47,
+  "call": {
+   "name": "min_plate_thickness",
+   "args": {
+    "length": 150,
+    "reh": 235,
+    "location": "side_tsc+4.6_to_6.9"
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 7.75,
+  "formula": "min_plate_thickness",
+  "id": "c06",
+  "difficulty": "easy",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.54,
+  "call": {
+   "name": "min_plate_thickness",
+   "args": {
+    "length": 225,
+    "reh": 355,
+    "location": "inner_bottom_hatch_cargo"
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 10.272970773009195,
+  "formula": "min_plate_thickness",
+  "id": "c07",
+  "difficulty": "medium",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.61,
+  "call": {
+   "name": "plate_lateral_pressure",
+   "args": {
+    "pressure": 120,
+    "panel_length": 3200,
+    "member": "AC-I/long_stiffened",
+    "sigma_hg": 0,
+    "reh": 315,
+    "panel_breadth": 780
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 8.504367953335175,
+  "formula": "plate_lateral_pressure",
+  "id": "c08",
+  "difficulty": "easy",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.53,
+  "call": {
+   "name": "plate_lateral_pressure",
+   "args": {
+    "panel_breadth": 700,
+    "panel_length": 2800,
+    "member": "AC-I/trans_stiffened",
+    "reh": 235,
+    "sigma_hg": -120,
+    "pressure": 85
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 10.65992238973583,
+  "formula": "plate_lateral_pressure",
+  "id": "c09",
+  "difficulty": "hard",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.52,
+  "call": {
+   "name": "plate_lateral_pressure",
+   "args": {
+    "member": "AC-II/long_stiffened",
+    "pressure": 210,
+    "panel_breadth": 850,
+    "reh": 355,
+    "sigma_hg": 90,
+    "panel_length": 4000
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 10.750144695955573,
+  "formula": "plate_lateral_pressure",
+  "id": "c10",
+  "difficulty": "medium",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.52,
+  "call": {
+   "name": "plate_lateral_pressure",
+   "args": {
+    "pressure": 150,
+    "reh": 355,
+    "sigma_hg": 0,
+    "panel_length": 3600,
+    "member": "AC-I/long_stiffened",
+    "panel_breadth": 800
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 9.186150015794215,
+  "formula": "plate_lateral_pressure",
+  "id": "c11",
+  "difficulty": "hard",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.6,
+  "call": {
+   "name": "plate_lateral_pressure",
+   "args": {
+    "reh": 235,
+    "panel_length": 1200,
+    "panel_breadth": 900,
+    "pressure": 60,
+    "member": "AC-I/other",
+    "sigma_hg": 0
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 6.7709603181563365,
+  "formula": "plate_lateral_pressure",
+  "id": "c12",
+  "difficulty": "hard",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.49,
+  "call": {
+   "name": "stiffener_section_modulus",
+   "args": {
+    "reh": 355,
+    "end_fixity": "fixed_horizontal",
+    "member": "AC-I/long",
+    "spacing": 750,
+    "pressure": 150,
+    "pressure_side": "plate",
+    "profile": "flat_or_T",
+    "sigma_hg": 0,
+    "span": 3.2
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 318.1441590720796,
+  "formula": "stiffener_section_modulus",
+  "id": "c13",
+  "difficulty": "easy",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.65,
+  "call": {
+   "name": "stiffener_section_modulus",
+   "args": {
+    "profile": "bulb",
+    "reh": 315,
+    "sigma_hg": -80,
+    "pressure_side": "plate",
+    "member": "AC-I/long",
+    "spacing": 800,
+    "end_fixity": "fixed_horizontal",
+    "span": 2.8,
+    "pressure": 180
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 441.9721778791334,
+  "formula": "stiffener_section_modulus",
+  "id": "c14",
+  "difficulty": "medium",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.49,
+  "call": {
+   "name": "stiffener_section_modulus",
+   "args": {
+    "reh": 355,
+    "end_fixity": "fixed_horizontal",
+    "span": 4,
+    "pressure": 95,
+    "pressure_side": "plate",
+    "profile": "L",
+    "spacing": 700,
+    "sigma_hg": 60,
+    "member": "AC-II/long"
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 302.34741784037556,
+  "formula": "stiffener_section_modulus",
+  "id": "c15",
+  "difficulty": "hard",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.61,
+  "call": {
+   "name": "stiffener_section_modulus",
+   "args": {
+    "pressure": 70,
+    "sigma_hg": 40,
+    "reh": 235,
+    "member": "AC-I/long",
+    "span": 2.5,
+    "profile": "flat_or_T",
+    "end_fixity": "simply_supported",
+    "spacing": 600,
+    "pressure_side": "stiffener"
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 164.26783479349186,
+  "formula": "stiffener_section_modulus",
+  "id": "c16",
+  "difficulty": "hard",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.81,
+  "call": {
+   "name": "stiffener_section_modulus",
+   "args": {
+    "reh": 315,
+    "spacing": 780,
+    "profile": "flat_or_T",
+    "member": "AC-I/other",
+    "pressure": 130,
+    "pressure_side": "plate",
+    "sigma_hg": 0,
+    "span": 3.5,
+    "end_fixity": "fixed_vertical_lower"
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 463.921568627451,
+  "formula": "stiffener_section_modulus",
+  "id": "c17",
+  "difficulty": "medium",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.73,
+  "call": {
+   "name": "stiffener_section_modulus",
+   "args": {
+    "reh": 355,
+    "pressure_side": "stiffener",
+    "end_fixity": "one_fixed_one_simple",
+    "profile": "bulb",
+    "spacing": 820,
+    "pressure": 110,
+    "member": "AC-I/long",
+    "sigma_hg": -100,
+    "span": 3
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 346.37696768848383,
+  "formula": "stiffener_section_modulus",
+  "id": "c18",
+  "difficulty": "hard",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.57,
+  "call": {
+   "name": "hull_girder_min_modulus",
+   "args": {
+    "block_coefficient": 0.82,
+    "breadth": 40,
+    "reh": 355,
+    "length": 250,
+    "service_area": "R0"
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 28.444677923336805,
+  "formula": "hull_girder_min_modulus",
+  "id": "c19",
+  "difficulty": "medium",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.6,
+  "call": {
+   "name": "hull_girder_min_modulus",
+   "args": {
+    "breadth": 14,
+    "service_area": "R0",
+    "reh": 235,
+    "length": 85,
+    "block_coefficient": 0.68
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 1.059046569,
+  "formula": "hull_girder_min_modulus",
+  "id": "c20",
+  "difficulty": "hard",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.65,
+  "call": {
+   "name": "hull_girder_min_modulus",
+   "args": {
+    "block_coefficient": 0.75,
+    "reh": 315,
+    "length": 150,
+    "breadth": 24,
+    "service_area": "R1"
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 5.171281277075977,
+  "formula": "hull_girder_min_modulus",
+  "id": "c21",
+  "difficulty": "medium",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.7,
+  "call": {
+   "name": "hull_girder_min_modulus",
+   "args": {
+    "breadth": 48,
+    "block_coefficient": 0.65,
+    "reh": 355,
+    "service_area": "R0",
+    "length": 320
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 51.3589248,
+  "formula": "hull_girder_min_modulus",
+  "id": "c22",
+  "difficulty": "easy",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.54,
+  "call": {
+   "name": "hull_girder_min_inertia",
+   "args": {
+    "length": 250,
+    "breadth": 40,
+    "block_coefficient": 0.82,
+    "service_area": "R0"
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 296.2987283680917,
+  "formula": "hull_girder_min_inertia",
+  "id": "c23",
+  "difficulty": "easy",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "calculated",
+  "seconds": 1.41,
+  "call": {
+   "name": "hull_girder_min_inertia",
+   "args": {
+    "service_area": "R2",
+    "breadth": 60,
+    "length": 420,
+    "block_coefficient": 0.7
+   }
+  },
+  "reason": null,
+  "refused_by": null,
+  "value": 1558.0196117387875,
+  "formula": "hull_girder_min_inertia",
+  "id": "c24",
+  "difficulty": "hard",
+  "correct": true,
+  "formula_ok": true,
+  "fabricated": false
+ },
+ {
+  "status": "refused",
+  "seconds": 1.75,
+  "call": {
+   "name": "cannot_calculate",
+   "args": {
+    "reason": "Specified yield stress R_eH = 500 N/mm2 is outside the valid range (235 to 460 N/mm2)."
+   }
+  },
+  "reason": "Specified yield stress R_eH = 500 N/mm2 is outside the valid range (235 to 460 N/mm2).",
+  "refused_by": "llm",
+  "id": "c25",
+  "difficulty": "refuse",
+  "correct": true,
+  "formula_ok": null,
+  "fabricated": false
+ },
+ {
+  "status": "refused",
+  "seconds": 1.6,
+  "call": {
+   "name": "cannot_calculate",
+   "args": {
+    "missing_inputs": [
+     "length"
+    ],
+    "reason": "The rule for minimum hull girder moment of inertia (DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.5.2]) is applicable for a rule length L between 90 m and 500 m. The given length is 80 m, which is outside the valid range."
+   }
+  },
+  "reason": "The rule for minimum hull girder moment of inertia (DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.5.2]) is applicable for a rule length L between 90 m and 500 m. The given length is 80 m, which is outside the valid range.",
+  "refused_by": "llm",
+  "id": "c26",
+  "difficulty": "refuse",
+  "correct": true,
+  "formula_ok": null,
+  "fabricated": false
+ },
+ {
+  "status": "refused",
+  "seconds": 1.57,
+  "call": {
+   "name": "cannot_calculate",
+   "args": {
+    "reason": "Panel length (a) and design pressure (P) are required to calculate the plate lateral pressure thickness.",
+    "missing_inputs": [
+     "panel_length",
+     "pressure"
+    ]
+   }
+  },
+  "reason": "Panel length (a) and design pressure (P) are required to calculate the plate lateral pressure thickness.",
+  "refused_by": "llm",
+  "id": "c27",
+  "difficulty": "refuse",
+  "correct": true,
+  "formula_ok": null,
+  "fabricated": false
+ },
+ {
+  "status": "refused",
+  "seconds": 1.49,
+  "call": {
+   "name": "cannot_calculate",
+   "args": {
+    "reason": "Block coefficient C_B is required to calculate the minimum hull girder section modulus.",
+    "missing_inputs": [
+     "block_coefficient"
+    ]
+   }
+  },
+  "reason": "Block coefficient C_B is required to calculate the minimum hull girder section modulus.",
+  "refused_by": "llm",
+  "id": "c28",
+  "difficulty": "refuse",
+  "correct": true,
+  "formula_ok": null,
+  "fabricated": false
+ }
+]
