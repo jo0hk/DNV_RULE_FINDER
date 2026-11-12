@@ -1,0 +1,1702 @@
+{
+ "summary": {
+  "condition": "B3",
+  "label": "LLM calculates from excerpts with formulas and structured tables (table-text RAG)",
+  "runs": 3,
+  "questions": 28,
+  "accuracy": 28.571428571428573,
+  "accuracy_min": 25.0,
+  "accuracy_max": 32.142857142857146,
+  "easy": 44.44444444444444,
+  "medium": 22.22222222222222,
+  "hard": 0.0,
+  "refuse": 83.33333333333333,
+  "clause_ok": 93.05555555555556,
+  "fabricated": 2,
+  "refuse_total": 12,
+  "errors": 0,
+  "seconds": 1.7898809523809522
+ },
+ "records": [
+  {
+   "status": "calculated",
+   "value": 0.72,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2]",
+   "reason": "",
+   "raw": {
+    "value": 0.72,
+    "unit": "",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 3.72,
+   "run": 1,
+   "id": "c01",
+   "difficulty": "easy",
+   "correct": true,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 0.78,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2] Table 2",
+   "reason": "",
+   "raw": {
+    "value": 0.78,
+    "unit": "",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2] Table 2",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.96,
+   "run": 1,
+   "id": "c02",
+   "difficulty": "medium",
+   "correct": true,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 0.68,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2] Table 2",
+   "reason": "",
+   "raw": {
+    "value": 0.68,
+    "unit": "-",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2] Table 2",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.64,
+   "run": 1,
+   "id": "c03",
+   "difficulty": "medium",
+   "correct": true,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 11.230722137953684,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+   "reason": "",
+   "raw": {
+    "value": 11.230722137953684,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.53,
+   "run": 1,
+   "id": "c04",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 10.9,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+   "reason": "",
+   "raw": {
+    "value": 10.9,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.8,
+   "run": 1,
+   "id": "c05",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 7.75,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+   "reason": "",
+   "raw": {
+    "value": 7.75,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.49,
+   "run": 1,
+   "id": "c06",
+   "difficulty": "easy",
+   "correct": true,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 11.23,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+   "reason": "",
+   "raw": {
+    "value": 11.23,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.6,
+   "run": 1,
+   "id": "c07",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 11.23,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+   "reason": "",
+   "raw": {
+    "value": 11.23,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.64,
+   "run": 1,
+   "id": "c08",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1]",
+   "reason": "Transversely stiffened plating uses alpha_a = 1.00. With sigma_hg = -120 N/mm2 (compression) and beta_a = 0.90 for AC-I, Ca becomes negative (0.90 - 1.00 * 120 / 235 = -0.41), which is invalid for thickness calculation.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1]",
+    "refuse": true,
+    "reason": "Transversely stiffened plating uses alpha_a = 1.00. With sigma_hg = -120 N/mm2 (compression) and beta_a = 0.90 for AC-I, Ca becomes negative (0.90 - 1.00 * 120 / 235 = -0.41), which is invalid for thickness calculation."
+   },
+   "seconds": 1.8,
+   "run": 1,
+   "id": "c09",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1]",
+   "reason": "The plate panel breadth b (850 mm) and length a (4000 mm) must be verified against elementary plate panel definition in Ch.3 Sec.7 [2.1.1] or information about shorter/transverse direction is missing, but more directly: standard panel dimensions require b to be the minor dimension and a the major dimension, here b=850 mm, a=4000 mm. Let's calculate: alpha_p = 1.2 - b / (2.1 * a) = 1.2 - 850 / (2.1 * 4000) = 1.2 - 0.10119 = 1.0988 (greater than 1.0, so alpha_p = 1.0). R_eH for D36 steel = 355 N/mm2. For AC-II, longitudinally stiffened plate: beta_a = 1.05, alpha_a = 0.50, Ca_max = 0.95. Ca = beta_a - alpha_a * |sigma_hg| / R_eH = 1.05 - 0.50 * 90 / 355 = 1.05 - 0.12676 = 0.9232 (<= Ca_max). P = 210 kN/m2. t = 0.0158 * alpha_p * b * sqrt(|P| / (Ca * R_eH)) = 0.0158 * 1.0 * 850 * sqrt(210 / (0.9232 * 355)) = 13.43 mm.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1]",
+    "refuse": true,
+    "reason": "The plate panel breadth b (850 mm) and length a (4000 mm) must be verified against elementary plate panel definition in Ch.3 Sec.7 [2.1.1] or information about shorter/transverse direction is missing, but more directly: standard panel dimensions require b to be the minor dimension and a the major dimension, here b=850 mm, a=4000 mm. Let's calculate: alpha_p = 1.2 - b / (2.1 * a) = 1.2 - 850 / (2.1 * 4000) = 1.2 - 0.10119 = 1.0988 (greater than 1.0, so alpha_p = 1.0). R_eH for D36 steel = 355 N/mm2. For AC-II, longitudinally stiffened plate: beta_a = 1.05, alpha_a = 0.50, Ca_max = 0.95. Ca = beta_a - alpha_a * |sigma_hg| / R_eH = 1.05 - 0.50 * 90 / 355 = 1.05 - 0.12676 = 0.9232 (<= Ca_max). P = 210 kN/m2. t = 0.0158 * alpha_p * b * sqrt(|P| / (Ca * R_eH)) = 0.0158 * 1.0 * 850 * sqrt(210 / (0.9232 * 355)) = 13.43 mm."
+   },
+   "seconds": 2.49,
+   "run": 1,
+   "id": "c10",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 11.23,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+   "reason": "",
+   "raw": {
+    "value": 11.23,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.82,
+   "run": 1,
+   "id": "c11",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 7.42,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+   "reason": "",
+   "raw": {
+    "value": 7.42,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.51,
+   "run": 1,
+   "id": "c12",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 315.65,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "",
+   "raw": {
+    "value": 315.65,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.49,
+   "run": 1,
+   "id": "c13",
+   "difficulty": "easy",
+   "correct": true,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 469.74,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "",
+   "raw": {
+    "value": 469.74,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.62,
+   "run": 1,
+   "id": "c14",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 116.1,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "",
+   "raw": {
+    "value": 116.1,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.64,
+   "run": 1,
+   "id": "c15",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 55.77,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "",
+   "raw": {
+    "value": 55.77,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.62,
+   "run": 1,
+   "id": "c16",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 469.76785714285717,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "",
+   "raw": {
+    "value": 469.76785714285717,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.64,
+   "run": 1,
+   "id": "c17",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "Missing ship's main data (rule length L) required to determine L2 (or L) for applicable rules, or insufficient input parameters for specific formula values.",
+   "raw": {
+    "value": null,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": true,
+    "reason": "Missing ship's main data (rule length L) required to determine L2 (or L) for applicable rules, or insufficient input parameters for specific formula values."
+   },
+   "seconds": 1.9,
+   "run": 1,
+   "id": "c18",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 24.363821,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "",
+   "raw": {
+    "value": 24.363821,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.55,
+   "run": 1,
+   "id": "c19",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "",
+   "reason": "Missing inputs or outside rule range (rule length is 85 m, but formula for minimum moment of inertia requires L > 90 m, and minimum section modulus formula references C_w0 for L <= 90 m where C_w0 = 5.7 + 0.0222L, but exact formula evaluation requires complete input verification).",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "",
+    "refuse": true,
+    "reason": "Missing inputs or outside rule range (rule length is 85 m, but formula for minimum moment of inertia requires L > 90 m, and minimum section modulus formula references C_w0 for L <= 90 m where C_w0 = 5.7 + 0.0222L, but exact formula evaluation requires complete input verification)."
+   },
+   "seconds": 1.88,
+   "run": 1,
+   "id": "c20",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "Steel grade A32 has ReH = 315 N/mm2, but the rule formula uses k (material factor) which requires specification or calculation based on the formula/table provided; however, let's check if k is given directly or needs to be extracted. Ah, the formula for ZR-gr requires k, which for A32 (ReH = 315) is 0.78 from Table 2 of Ch.3 Sec.1. Let's compute it: C_w = 10.75 - ((300 - 150)/100)^1.5 = 10.75 - (1.5)^1.5 = 10.75 - 1.837 = 8.913. fr = 0.9 (for R1). C_w0 = C_w = 8.913 (since L > 90 m). k = 0.78. ZR-gr = 0.78 * ((1 + 0.9) / 2) * 8.913 * 150^2 * 24 * (0.75 + 0.7) * 10^-6.",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": true,
+    "reason": "Steel grade A32 has ReH = 315 N/mm2, but the rule formula uses k (material factor) which requires specification or calculation based on the formula/table provided; however, let's check if k is given directly or needs to be extracted. Ah, the formula for ZR-gr requires k, which for A32 (ReH = 315) is 0.78 from Table 2 of Ch.3 Sec.1. Let's compute it: C_w = 10.75 - ((300 - 150)/100)^1.5 = 10.75 - (1.5)^1.5 = 10.75 - 1.837 = 8.913. fr = 0.9 (for R1). C_w0 = C_w = 8.913 (since L > 90 m). k = 0.78. ZR-gr = 0.78 * ((1 + 0.9) / 2) * 8.913 * 150^2 * 24 * (0.75 + 0.7) * 10^-6."
+   },
+   "seconds": 2.27,
+   "run": 1,
+   "id": "c21",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "Rule length L = 320 m exceeds the applicable range for C_w formula and hull girder section modulus formulas given in the excerpts (L <= 300 m or 350 m depending on the specific wave coefficient range, but C_w0 definition uses C_w for L > 90 m where C_w is only defined up to L = 300 m in the rule excerpts provided: 90 <= L <= 300 m and 300 < L <= 350 m without explicit formula for C_w for L > 350 m, wait, let's check C_w formula: for 300 < L <= 350, C_w = 10.75. But rule length L = 320 m is within 300 < L <= 350. Let's re-verify: C_w = 10.75 for 300 < L <= 350. C_w0 = C_w for L > 90 m. So C_w0 = 10.75. Let's compute if possible: k for ReH 355 is 0.72. f_r = 1.0 (R0). Z_R-gr = k * ((1 + f_r) / 2) * C_w0 * L^2 * B * (C_B + 0.7) * 10^-6 = 0.72 * 1.0 * 10.75 * 320^2 * 48 * (0.65 + 0.7) * 10^-6 = 0.72 * 10.75 * 102400 * 48 * 1.35 * 10^-6 = 53.64096 m3.",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": true,
+    "reason": "Rule length L = 320 m exceeds the applicable range for C_w formula and hull girder section modulus formulas given in the excerpts (L <= 300 m or 350 m depending on the specific wave coefficient range, but C_w0 definition uses C_w for L > 90 m where C_w is only defined up to L = 300 m in the rule excerpts provided: 90 <= L <= 300 m and 300 < L <= 350 m without explicit formula for C_w for L > 350 m, wait, let's check C_w formula: for 300 < L <= 350, C_w = 10.75. But rule length L = 320 m is within 300 < L <= 350. Let's re-verify: C_w = 10.75 for 300 < L <= 350. C_w0 = C_w for L > 90 m. So C_w0 = 10.75. Let's compute if possible: k for ReH 355 is 0.72. f_r = 1.0 (R0). Z_R-gr = k * ((1 + f_r) / 2) * C_w0 * L^2 * B * (C_B + 0.7) * 10^-6 = 0.72 * 1.0 * 10.75 * 320^2 * 48 * (0.65 + 0.7) * 10^-6 = 0.72 * 10.75 * 102400 * 48 * 1.35 * 10^-6 = 53.64096 m3."
+   },
+   "seconds": 2.55,
+   "run": 1,
+   "id": "c22",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 115.829,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.5.2]",
+   "reason": "",
+   "raw": {
+    "value": 115.829,
+    "unit": "m4",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.5.2]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.72,
+   "run": 1,
+   "id": "c23",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "Pt.3 Ch.5 Sec.2 [1.5.1]",
+   "reason": "The requirement in [1.5.2] applies to self propelled ships with length above 90 m and up to 350 m (or 500 m depending on C_w formulation range, but L=420 m is outside the valid rule range for C_w formulation where L is restricted to <= 500 m, wait, L=420 is <= 500 m, let's check C_w formula: for 350 < L <= 500, C_w = 10.75 - ((L - 350) / 150)^1.5. However, DNV Pt.3 Ch.5 Sec.2 [1.5.1] states rule length L <= 350 m or similar? Let's check rule text: [1.5.1] Application The requirement in [1.5.2] applies to self propelled ships with length above 90 m. Wait, let's look at C_w ranges in [6]: L < 90, 90 <= L <= 300, 300 < L <= 350, 350 < L <= 500. But wait, is L=420 m exceeding rule applicability for hull girder inertia or is there another reason? Let's check DNV Pt.3 Ch.5 Sec.2 [1.5.1]: 'applies to self propelled ships with length above 90 m.' Wait, let's calculate it if it's valid: L=420, C_w = 10.75 - ((420 - 350) / 150)^1.5 = 10.75 - (70/150)^1.5 = 10.75 - 0.318 = 10.432. fr = 0.8 (service area R2). IyR-gr = 3 * fr * C_w * L^3 * B * (CB + 0.7) * 10^-8 = 3 * 0.8 * 10.432 * 420^3 * 60 * (0.7 + 0.7) * 10^-8 = 3 * 0.8 * 10.432 * 74088000 * 60 * 1.4 * 10^-8 = 31548.88 m4. Wait, let's verify if L > 350 has restrictions in Ch.5 Sec.2 [1.5]. The prompt says 'If a required input is not given, or the request is outside the rule's applicable range, do not calculate: refuse.' Let's check if L=420 m is outside. Rule [6] defines C_w up to 500 m. Therefore L=420 is within range. Let's provide the calculated value.",
+   "raw": {
+    "value": null,
+    "unit": "m4",
+    "clause": "Pt.3 Ch.5 Sec.2 [1.5.1]",
+    "refuse": true,
+    "reason": "The requirement in [1.5.2] applies to self propelled ships with length above 90 m and up to 350 m (or 500 m depending on C_w formulation range, but L=420 m is outside the valid rule range for C_w formulation where L is restricted to <= 500 m, wait, L=420 is <= 500 m, let's check C_w formula: for 350 < L <= 500, C_w = 10.75 - ((L - 350) / 150)^1.5. However, DNV Pt.3 Ch.5 Sec.2 [1.5.1] states rule length L <= 350 m or similar? Let's check rule text: [1.5.1] Application The requirement in [1.5.2] applies to self propelled ships with length above 90 m. Wait, let's look at C_w ranges in [6]: L < 90, 90 <= L <= 300, 300 < L <= 350, 350 < L <= 500. But wait, is L=420 m exceeding rule applicability for hull girder inertia or is there another reason? Let's check DNV Pt.3 Ch.5 Sec.2 [1.5.1]: 'applies to self propelled ships with length above 90 m.' Wait, let's calculate it if it's valid: L=420, C_w = 10.75 - ((420 - 350) / 150)^1.5 = 10.75 - (70/150)^1.5 = 10.75 - 0.318 = 10.432. fr = 0.8 (service area R2). IyR-gr = 3 * fr * C_w * L^3 * B * (CB + 0.7) * 10^-8 = 3 * 0.8 * 10.432 * 420^3 * 60 * (0.7 + 0.7) * 10^-8 = 3 * 0.8 * 10.432 * 74088000 * 60 * 1.4 * 10^-8 = 31548.88 m4. Wait, let's verify if L > 350 has restrictions in Ch.5 Sec.2 [1.5]. The prompt says 'If a required input is not given, or the request is outside the rule's applicable range, do not calculate: refuse.' Let's check if L=420 m is outside. Rule [6] defines C_w up to 500 m. Therefore L=420 is within range. Let's provide the calculated value."
+   },
+   "seconds": 3.35,
+   "run": 1,
+   "id": "c24",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.1]",
+   "reason": "Specified minimum yield stress ReH of 500 N/mm2 exceeds the maximum allowed standard rolled steel yield stress of 460 N/mm2 in Table 1.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.1]",
+    "refuse": true,
+    "reason": "Specified minimum yield stress ReH of 500 N/mm2 exceeds the maximum allowed standard rolled steel yield stress of 460 N/mm2 in Table 1."
+   },
+   "seconds": 1.72,
+   "run": 1,
+   "id": "c25",
+   "difficulty": "refuse",
+   "correct": true,
+   "formula_ok": null,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "Pt.3 Ch.5 Sec.2 [1.5.1]",
+   "reason": "The requirement in [1.5.2] applies to self-propelled ships with length above 90 m. The given ship length is 80 m, which is outside the applicable range.",
+   "raw": {
+    "value": null,
+    "unit": "m4",
+    "clause": "Pt.3 Ch.5 Sec.2 [1.5.1]",
+    "refuse": true,
+    "reason": "The requirement in [1.5.2] applies to self-propelled ships with length above 90 m. The given ship length is 80 m, which is outside the applicable range."
+   },
+   "seconds": 1.78,
+   "run": 1,
+   "id": "c26",
+   "difficulty": "refuse",
+   "correct": true,
+   "formula_ok": null,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+   "reason": "Required input parameters such as lateral pressure P, hull girder longitudinal stress sigma_hg, elementary plate panel dimensions a and b, and design load set are not provided.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+    "refuse": true,
+    "reason": "Required input parameters such as lateral pressure P, hull girder longitudinal stress sigma_hg, elementary plate panel dimensions a and b, and design load set are not provided."
+   },
+   "seconds": 1.52,
+   "run": 1,
+   "id": "c27",
+   "difficulty": "refuse",
+   "correct": true,
+   "formula_ok": null,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "Missing inputs: block coefficient CB and service restriction reduction factor fr",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": true,
+    "reason": "Missing inputs: block coefficient CB and service restriction reduction factor fr"
+   },
+   "seconds": 1.66,
+   "run": 1,
+   "id": "c28",
+   "difficulty": "refuse",
+   "correct": true,
+   "formula_ok": null,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 0.72,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2] Table 2",
+   "reason": "",
+   "raw": {
+    "value": 0.72,
+    "unit": "",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2] Table 2",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.44,
+   "run": 2,
+   "id": "c01",
+   "difficulty": "easy",
+   "correct": true,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 0.78,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2] Table 2",
+   "reason": "",
+   "raw": {
+    "value": 0.78,
+    "unit": "",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2] Table 2",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.51,
+   "run": 2,
+   "id": "c02",
+   "difficulty": "medium",
+   "correct": true,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 0.68,
+   "clause": "Pt.3 Ch.3 Sec.1 Table 2",
+   "reason": "",
+   "raw": {
+    "value": 0.68,
+    "unit": "",
+    "clause": "Pt.3 Ch.3 Sec.1 Table 2",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.57,
+   "run": 2,
+   "id": "c03",
+   "difficulty": "medium",
+   "correct": true,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 11.232145885233159,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+   "reason": "",
+   "raw": {
+    "value": 11.232145885233159,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.62,
+   "run": 2,
+   "id": "c04",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 10.14,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+   "reason": "",
+   "raw": {
+    "value": 10.14,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.47,
+   "run": 2,
+   "id": "c05",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 7.75,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+   "reason": "",
+   "raw": {
+    "value": 7.75,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.52,
+   "run": 2,
+   "id": "c06",
+   "difficulty": "easy",
+   "correct": true,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 11.23,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+   "reason": "",
+   "raw": {
+    "value": 11.23,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.72,
+   "run": 2,
+   "id": "c07",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 11.59,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+   "reason": "",
+   "raw": {
+    "value": 11.59,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.91,
+   "run": 2,
+   "id": "c08",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 11.23,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+   "reason": "",
+   "raw": {
+    "value": 11.23,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.86,
+   "run": 2,
+   "id": "c09",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 18.25,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+   "reason": "",
+   "raw": {
+    "value": 18.25,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.53,
+   "run": 2,
+   "id": "c10",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 11.66,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+   "reason": "",
+   "raw": {
+    "value": 11.66,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.64,
+   "run": 2,
+   "id": "c11",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 6.89,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+   "reason": "",
+   "raw": {
+    "value": 6.89,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.61,
+   "run": 2,
+   "id": "c12",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 319.44,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "",
+   "raw": {
+    "value": 319.44,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.65,
+   "run": 2,
+   "id": "c13",
+   "difficulty": "easy",
+   "correct": true,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 319.49,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "",
+   "raw": {
+    "value": 319.49,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.47,
+   "run": 2,
+   "id": "c14",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 113.88,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "",
+   "raw": {
+    "value": 113.88,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.61,
+   "run": 2,
+   "id": "c15",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "For simply supported stiffeners with lateral pressure acting on the stiffener side under tension, Table 3 specifies Cs = Cs-max. However, the exact combination of simply supported ends with lateral pressure on the stiffener side and tension leads to an ambiguity in Table 3 regarding the formula application.",
+   "raw": {
+    "value": null,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": true,
+    "reason": "For simply supported stiffeners with lateral pressure acting on the stiffener side under tension, Table 3 specifies Cs = Cs-max. However, the exact combination of simply supported ends with lateral pressure on the stiffener side and tension leads to an ambiguity in Table 3 regarding the formula application."
+   },
+   "seconds": 1.66,
+   "run": 2,
+   "id": "c16",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 583.48,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "",
+   "raw": {
+    "value": 583.48,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 2.18,
+   "run": 2,
+   "id": "c17",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "Missing required ship main data (Rule length L) to determine L2 (or L is needed for length-dependent checks, but wait: let's check if L is actually in the formula for stiffener section modulus). Formula: Z = fu * |P| * s * l_bdg^2 / (f_bdg * Cs * ReH). Let's check inputs: fu = 1.03 (bulb profile), P = 110, s = 820 mm? Wait, s is in mm or m? Formula uses s. Let's check standard units: P in kN/m2, s in mm? No, let's check if all inputs are provided: |P| = 110, s = 0.82 m (or 820), l_bdg = 3.0 m, f_bdg = 8.00 (one fixed, one simply supported), ReH = 355 (for A36), Cs = beta_s - alpha_s * |sigma_hg| / ReH = 0.95 - 1.00 * 100 / 355 = 0.6676. Wait, let's check if s in the formula is in mm or m. Wait, I can calculate it if units are clear, but let's check if any input is missing. None of the required inputs are missing!",
+   "raw": {
+    "value": null,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": true,
+    "reason": "Missing required ship main data (Rule length L) to determine L2 (or L is needed for length-dependent checks, but wait: let's check if L is actually in the formula for stiffener section modulus). Formula: Z = fu * |P| * s * l_bdg^2 / (f_bdg * Cs * ReH). Let's check inputs: fu = 1.03 (bulb profile), P = 110, s = 820 mm? Wait, s is in mm or m? Formula uses s. Let's check standard units: P in kN/m2, s in mm? No, let's check if all inputs are provided: |P| = 110, s = 0.82 m (or 820), l_bdg = 3.0 m, f_bdg = 8.00 (one fixed, one simply supported), ReH = 355 (for A36), Cs = beta_s - alpha_s * |sigma_hg| / ReH = 0.95 - 1.00 * 100 / 355 = 0.6676. Wait, let's check if s in the formula is in mm or m. Wait, I can calculate it if units are clear, but let's check if any input is missing. None of the required inputs are missing!"
+   },
+   "seconds": 2.61,
+   "run": 2,
+   "id": "c18",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 24.162788,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "",
+   "raw": {
+    "value": 24.162788,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.47,
+   "run": 2,
+   "id": "c19",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "Rule length L = 85 m is less than 90 m for formula applicability in Sec.2 [1.3] (or requires special consideration / different formula for L <= 90 m if applicable, but Cw0 parameter definition for L <= 90 m is provided while formula Z_R-gr uses C_w0). Let's check DNV Pt.3 Ch.5 Sec.2 [1.3]: Z_R-gr = k * ((1 + f_r) / 2) * C_w0 * L^2 * B * (C_B + 0.7) * 10^-6 where C_w0 = 5.7 + 0.0222L for L <= 90 m.",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": true,
+    "reason": "Rule length L = 85 m is less than 90 m for formula applicability in Sec.2 [1.3] (or requires special consideration / different formula for L <= 90 m if applicable, but Cw0 parameter definition for L <= 90 m is provided while formula Z_R-gr uses C_w0). Let's check DNV Pt.3 Ch.5 Sec.2 [1.3]: Z_R-gr = k * ((1 + f_r) / 2) * C_w0 * L^2 * B * (C_B + 0.7) * 10^-6 where C_w0 = 5.7 + 0.0222L for L <= 90 m."
+   },
+   "seconds": 1.98,
+   "run": 2,
+   "id": "c20",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "The formula requires C_w0 or C_w which depends on L and rule definitions, but the provided excerpts do not explicitly give the complete evaluation steps for C_w0 or formula variables in a straightforward computable manner for this exact query without missing intermediate parameters.",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": true,
+    "reason": "The formula requires C_w0 or C_w which depends on L and rule definitions, but the provided excerpts do not explicitly give the complete evaluation steps for C_w0 or formula variables in a straightforward computable manner for this exact query without missing intermediate parameters."
+   },
+   "seconds": 1.82,
+   "run": 2,
+   "id": "c21",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "Rule length L = 320 m exceeds the range L <= 300 m for C_w formula [6] or range in Pt.3 Ch.5 Sec.2.",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": true,
+    "reason": "Rule length L = 320 m exceeds the range L <= 300 m for C_w formula [6] or range in Pt.3 Ch.5 Sec.2."
+   },
+   "seconds": 1.73,
+   "run": 2,
+   "id": "c22",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 116.59125,
+   "clause": "Pt.3 Ch.5 Sec.2 [1.5.2]",
+   "reason": "",
+   "raw": {
+    "value": 116.59125,
+    "unit": "m4",
+    "clause": "Pt.3 Ch.5 Sec.2 [1.5.2]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.44,
+   "run": 2,
+   "id": "c23",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.5.1]",
+   "reason": "The requirement in [1.5.2] applies to self propelled ships with length above 90 m and up to 350 m based on the wave coefficient and rule validity limits (L <= 350 m for C_w formula bounds in Ch.4 Sec.4).",
+   "raw": {
+    "value": null,
+    "unit": "m4",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.5.1]",
+    "refuse": true,
+    "reason": "The requirement in [1.5.2] applies to self propelled ships with length above 90 m and up to 350 m based on the wave coefficient and rule validity limits (L <= 350 m for C_w formula bounds in Ch.4 Sec.4)."
+   },
+   "seconds": 1.83,
+   "run": 2,
+   "id": "c24",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.1.5]",
+   "reason": "Specified minimum yield stress ReH of 500 N/mm2 exceeds the standard rolled steel limit of 460 N/mm2 and requires special case-by-case consideration.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.1.5]",
+    "refuse": true,
+    "reason": "Specified minimum yield stress ReH of 500 N/mm2 exceeds the standard rolled steel limit of 460 N/mm2 and requires special case-by-case consideration."
+   },
+   "seconds": 1.71,
+   "run": 2,
+   "id": "c25",
+   "difficulty": "refuse",
+   "correct": true,
+   "formula_ok": null,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.5.1]",
+   "reason": "The requirement in [1.5.2] applies to self propelled ships with length above 90 m. The given length is 80 m, which is outside the applicable range.",
+   "raw": {
+    "value": null,
+    "unit": "m4",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.5.1]",
+    "refuse": true,
+    "reason": "The requirement in [1.5.2] applies to self propelled ships with length above 90 m. The given length is 80 m, which is outside the applicable range."
+   },
+   "seconds": 1.71,
+   "run": 2,
+   "id": "c26",
+   "difficulty": "refuse",
+   "correct": true,
+   "formula_ok": null,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+   "reason": "Required input lateral pressure P, hull girder stress sigma_hg, elementary panel length a, breadth b, and design load set are not provided.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+    "refuse": true,
+    "reason": "Required input lateral pressure P, hull girder stress sigma_hg, elementary panel length a, breadth b, and design load set are not provided."
+   },
+   "seconds": 1.89,
+   "run": 2,
+   "id": "c27",
+   "difficulty": "refuse",
+   "correct": true,
+   "formula_ok": null,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 18.0673,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "",
+   "raw": {
+    "value": 18.0673,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.68,
+   "run": 2,
+   "id": "c28",
+   "difficulty": "refuse",
+   "correct": false,
+   "formula_ok": null,
+   "fabricated": true
+  },
+  {
+   "status": "calculated",
+   "value": 0.72,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2] Table 2",
+   "reason": "",
+   "raw": {
+    "value": 0.72,
+    "unit": "",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2] Table 2",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.45,
+   "run": 3,
+   "id": "c01",
+   "difficulty": "easy",
+   "correct": true,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 0.78,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2]",
+   "reason": "",
+   "raw": {
+    "value": 0.78,
+    "unit": "",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.62,
+   "run": 3,
+   "id": "c02",
+   "difficulty": "medium",
+   "correct": true,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 0.68,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2] Table 2",
+   "reason": "",
+   "raw": {
+    "value": 0.68,
+    "unit": "-",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.2] Table 2",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.84,
+   "run": 3,
+   "id": "c03",
+   "difficulty": "medium",
+   "correct": true,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 11.218525791720815,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+   "reason": "",
+   "raw": {
+    "value": 11.218525791720815,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.53,
+   "run": 3,
+   "id": "c04",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 11.52,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+   "reason": "",
+   "raw": {
+    "value": 11.52,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.6,
+   "run": 3,
+   "id": "c05",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 7.75,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+   "reason": "",
+   "raw": {
+    "value": 7.75,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.51,
+   "run": 3,
+   "id": "c06",
+   "difficulty": "easy",
+   "correct": true,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 11.23,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+   "reason": "",
+   "raw": {
+    "value": 11.23,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.3 [1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 2.33,
+   "run": 3,
+   "id": "c07",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 11.23,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+   "reason": "",
+   "raw": {
+    "value": 11.23,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.92,
+   "run": 3,
+   "id": "c08",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 15.35,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1]",
+   "reason": "",
+   "raw": {
+    "value": 15.35,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.7,
+   "run": 3,
+   "id": "c09",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 18.06,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+   "reason": "",
+   "raw": {
+    "value": 18.06,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.45,
+   "run": 3,
+   "id": "c10",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 11.59,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+   "reason": "",
+   "raw": {
+    "value": 11.59,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.49,
+   "run": 3,
+   "id": "c11",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 7.42,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+   "reason": "",
+   "raw": {
+    "value": 7.42,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.52,
+   "run": 3,
+   "id": "c12",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 313.23,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "",
+   "raw": {
+    "value": 313.23,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.7,
+   "run": 3,
+   "id": "c13",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 312.78,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "",
+   "raw": {
+    "value": 312.78,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.71,
+   "run": 3,
+   "id": "c14",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 116.8,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "",
+   "raw": {
+    "value": 116.8,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.92,
+   "run": 3,
+   "id": "c15",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "For simply supported stiffeners with lateral pressure acting on the stiffener side under tension, Table 3 specifies Cs = Cs-max. However, the exact combination of simply supported ends with pressure on the stiffener side and tensile hull girder stress requires the plate-side vs stiffener-side conditions to be strictly interpreted from Table 3 and formula text, and the given input has conflicting or underspecified application notes in the rules for Cs in this branch.",
+   "raw": {
+    "value": null,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": true,
+    "reason": "For simply supported stiffeners with lateral pressure acting on the stiffener side under tension, Table 3 specifies Cs = Cs-max. However, the exact combination of simply supported ends with pressure on the stiffener side and tensile hull girder stress requires the plate-side vs stiffener-side conditions to be strictly interpreted from Table 3 and formula text, and the given input has conflicting or underspecified application notes in the rules for Cs in this branch."
+   },
+   "seconds": 2.01,
+   "run": 3,
+   "id": "c16",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 315.65,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "",
+   "raw": {
+    "value": 315.65,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.76,
+   "run": 3,
+   "id": "c17",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+   "reason": "Missing ship's rule length L or rule length L2 to determine the maximum length limitation for the stiffener or check applicable range, or missing ReH value (though A36 implies ReH = 355 N/mm2, the rule formula requires inputs that are fully defined). Wait, ReH for A36 is 355 N/mm2. Let's check if all inputs are present: fu = 1.03 for bulb profiles, P = 110 kN/m2, s = 820 mm = 0.82 m, l_bdg = 3.0 m, f_bdg = 8.0 (one fixed, one simply supported), Cs needs to be calculated. For one fixed and one simply supported end, lateral pressure on stiffener side, compression: let's check Table 3. Table 3 lists formulas for 'one or both end fixed' and 'simply supported ends', but the table row for 'one fixed end and one simply supported end' is not explicitly mapped in Table 3 (Table 3 covers 'one or both end fixed' and 'simply supported ends'). Therefore, the case of mixed end fixity (one fixed, one simply supported) for Cs is ambiguous or unsupported by the explicit table text provided in the excerpts.",
+   "raw": {
+    "value": null,
+    "unit": "cm3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.5 [1.1.2]",
+    "refuse": true,
+    "reason": "Missing ship's rule length L or rule length L2 to determine the maximum length limitation for the stiffener or check applicable range, or missing ReH value (though A36 implies ReH = 355 N/mm2, the rule formula requires inputs that are fully defined). Wait, ReH for A36 is 355 N/mm2. Let's check if all inputs are present: fu = 1.03 for bulb profiles, P = 110 kN/m2, s = 820 mm = 0.82 m, l_bdg = 3.0 m, f_bdg = 8.0 (one fixed, one simply supported), Cs needs to be calculated. For one fixed and one simply supported end, lateral pressure on stiffener side, compression: let's check Table 3. Table 3 lists formulas for 'one or both end fixed' and 'simply supported ends', but the table row for 'one fixed end and one simply supported end' is not explicitly mapped in Table 3 (Table 3 covers 'one or both end fixed' and 'simply supported ends'). Therefore, the case of mixed end fixity (one fixed, one simply supported) for Cs is ambiguous or unsupported by the explicit table text provided in the excerpts."
+   },
+   "seconds": 2.57,
+   "run": 3,
+   "id": "c18",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 24.577,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "",
+   "raw": {
+    "value": 24.577,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.7,
+   "run": 3,
+   "id": "c19",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "Rule length L = 85 m is less than 90 m, and minimum midship section modulus formula in Pt.3 Ch.5 Sec.2 [1.3] requires L > 90 m via Cw0 or Cw.",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": true,
+    "reason": "Rule length L = 85 m is less than 90 m, and minimum midship section modulus formula in Pt.3 Ch.5 Sec.2 [1.3] requires L > 90 m via Cw0 or Cw."
+   },
+   "seconds": 1.76,
+   "run": 3,
+   "id": "c20",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "Steel grade A32 has ReH = 315 N/mm2, but the minimum section modulus formula in Pt.3 Ch.5 Sec.2 [1.3] uses the material factor k explicitly, not ReH, and the formula given in the rule text excerpt is incomplete/image-only.",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": true,
+    "reason": "Steel grade A32 has ReH = 315 N/mm2, but the minimum section modulus formula in Pt.3 Ch.5 Sec.2 [1.3] uses the material factor k explicitly, not ReH, and the formula given in the rule text excerpt is incomplete/image-only."
+   },
+   "seconds": 1.85,
+   "run": 3,
+   "id": "c21",
+   "difficulty": "medium",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "Rule length L = 320 m exceeds the upper limit of the rule formula range for C_w (maximum L = 500 m, but C_w formula has a maximum of L = 350 m and C_w0 requirement C_w for L > 90 m).",
+   "raw": {
+    "value": null,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": true,
+    "reason": "Rule length L = 320 m exceeds the upper limit of the rule formula range for C_w (maximum L = 500 m, but C_w formula has a maximum of L = 350 m and C_w0 requirement C_w for L > 90 m)."
+   },
+   "seconds": 1.88,
+   "run": 3,
+   "id": "c22",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 113.847,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.5.2]",
+   "reason": "",
+   "raw": {
+    "value": 113.847,
+    "unit": "m4",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.5.2]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.77,
+   "run": 3,
+   "id": "c23",
+   "difficulty": "easy",
+   "correct": false,
+   "formula_ok": true,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "Pt.3 Ch.5 Sec.2 [1.5.1]",
+   "reason": "The requirement in [1.5.2] applies to self propelled ships with length above 90 m and up to 350 m (or 500 m depending on C_w formulation range, but rule length L = 420 m exceeds the formula range limit of 350 m for C_w in Ch.4 Sec.6).",
+   "raw": {
+    "value": null,
+    "unit": "m4",
+    "clause": "Pt.3 Ch.5 Sec.2 [1.5.1]",
+    "refuse": true,
+    "reason": "The requirement in [1.5.2] applies to self propelled ships with length above 90 m and up to 350 m (or 500 m depending on C_w formulation range, but rule length L = 420 m exceeds the formula range limit of 350 m for C_w in Ch.4 Sec.6)."
+   },
+   "seconds": 2.03,
+   "run": 3,
+   "id": "c24",
+   "difficulty": "hard",
+   "correct": false,
+   "formula_ok": false,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.1]",
+   "reason": "Specified minimum yield stress ReH of 500 N/mm2 exceeds the maximum listed standard steel grade ReH of 460 N/mm2 in Table 1 (and requires a case-by-case consideration per [2.1.5]).",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.3 Sec.1 [2.1]",
+    "refuse": true,
+    "reason": "Specified minimum yield stress ReH of 500 N/mm2 exceeds the maximum listed standard steel grade ReH of 460 N/mm2 in Table 1 (and requires a case-by-case consideration per [2.1.5])."
+   },
+   "seconds": 1.85,
+   "run": 3,
+   "id": "c25",
+   "difficulty": "refuse",
+   "correct": true,
+   "formula_ok": null,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "Pt.3 Ch.5 Sec.2 [1.5.1]",
+   "reason": "The requirement in [1.5.2] applies to self propelled ships with length above 90 m. Rule length L = 80 m is less than 90 m.",
+   "raw": {
+    "value": null,
+    "unit": "m4",
+    "clause": "Pt.3 Ch.5 Sec.2 [1.5.1]",
+    "refuse": true,
+    "reason": "The requirement in [1.5.2] applies to self propelled ships with length above 90 m. Rule length L = 80 m is less than 90 m."
+   },
+   "seconds": 1.77,
+   "run": 3,
+   "id": "c26",
+   "difficulty": "refuse",
+   "correct": true,
+   "formula_ok": null,
+   "fabricated": false
+  },
+  {
+   "status": "refused",
+   "value": null,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+   "reason": "Required input parameters such as design pressure P, hull girder stress sigma_hg, elementary plate panel dimensions, acceptance criteria, or scantling draught are missing.",
+   "raw": {
+    "value": null,
+    "unit": "mm",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.6 Sec.4 [1.1.1]",
+    "refuse": true,
+    "reason": "Required input parameters such as design pressure P, hull girder stress sigma_hg, elementary plate panel dimensions, acceptance criteria, or scantling draught are missing."
+   },
+   "seconds": 1.73,
+   "run": 3,
+   "id": "c27",
+   "difficulty": "refuse",
+   "correct": true,
+   "formula_ok": null,
+   "fabricated": false
+  },
+  {
+   "status": "calculated",
+   "value": 1.70058,
+   "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+   "reason": "",
+   "raw": {
+    "value": 1.70058,
+    "unit": "m3",
+    "clause": "DNV-RU-SHIP Pt.3 Ch.5 Sec.2 [1.3]",
+    "refuse": false,
+    "reason": ""
+   },
+   "seconds": 1.63,
+   "run": 3,
+   "id": "c28",
+   "difficulty": "refuse",
+   "correct": false,
+   "formula_ok": null,
+   "fabricated": true
+  }
+ ]
+}

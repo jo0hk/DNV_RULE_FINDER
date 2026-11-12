@@ -4,6 +4,8 @@ eval/calc_experiment.py — 계산 문제 세트로 계산 방식별 정확도 �
     A  : 규정 발췌문(공식 빠진 원래 chunk)을 보고 LLM이 직접 계산
     B  : 공식을 텍스트로 붙인 발췌문을 보고 LLM이 직접 계산
     B2 : B와 같은 발췌문을 보고 LLM이 파이썬 코드를 써서 계산 (코드는 이 컴퓨터에서 실행)
+    B3 : B + 발췌문이 언급한 표를 구조화된 표로 함께 주고 LLM이 직접 계산 (표·텍스트 결합 RAG)
+    B3c: B3과 같은 발췌문으로 LLM이 파이썬 코드를 써서 계산
     C  : LLM은 함수 선택과 입력값 추출만, 계산은 검증한 파이썬 공식 엔진 (calc.py)
 
     A, B, B2에는 공식 6개에 필요한 발췌문을 모두 준다(eval/formula_context.py). 검색 오류의 영향은 빼고
@@ -132,9 +134,9 @@ def execute(code):
     return parse_json(last)
 
 
-def run_code(question):
+def run_code(question, kind="formula"):
     from llm import chat
-    text = chat(CODE_PROMPT + context("formula"), question["question"])
+    text = chat(CODE_PROMPT + context(kind), question["question"])
     block = re.search(r"```(?:python)?\s*\n(.*?)```", text or "", re.S)
     if not block:
         reason = re.sub(r"^\s*REFUSE:\s*", "", (text or "").strip())[:300]
@@ -165,6 +167,9 @@ CONDITIONS = {
     "A": ("LLM calculates from rule excerpts as stored (formulas missing)", lambda q: run_direct(q, "plain")),
     "B": ("LLM calculates from rule excerpts with formulas added as text", lambda q: run_direct(q, "formula")),
     "B2": ("LLM writes Python code from rule excerpts with formulas added", run_code),
+    "B3": ("LLM calculates from excerpts with formulas and structured tables (table-text RAG)", lambda q: run_direct(q, "tables")),
+    "B3c": ("LLM writes Python code from excerpts with formulas and structured tables (table-text RAG)",
+            lambda q: run_code(q, "tables")),
     "C": ("LLM selects function and inputs, verified Python engine calculates", run_engine),
 }
 

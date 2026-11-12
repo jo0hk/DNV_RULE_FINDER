@@ -10,14 +10,15 @@ import json
 from pathlib import Path
 
 RESULTS = Path(__file__).resolve().parent / "results"
-ORDER = ["A", "B", "B2", "C"]
+ORDER = ["A", "B", "B2", "B3", "B3c", "C"]
 NAMES = {"A": "A  LLM, chunk as stored", "B": "B  LLM, formula text added",
-         "B2": "B2 LLM writes Python", "C": "C  LLM picks, engine calculates"}
+         "B2": "B2 LLM writes Python", "B3": "B3 + structured tables",
+         "B3c": "B3c + tables, LLM writes Python", "C": "C  LLM picks, engine calculates"}
 LEVELS = ["easy", "medium", "hard", "refuse"]
 
 # 색: 기준 팔레트(밝은 화면) 범주형 1~4번을 고정 순서로 사용
 SURFACE, INK, INK2, GRID = "#fcfcfb", "#0b0b0b", "#52514e", "#e4e3df"
-SERIES = {"A": "#2a78d6", "B": "#eb6834", "B2": "#1baf7a", "C": "#eda100"}
+SERIES = {"A": "#2a78d6", "B": "#eb6834", "B2": "#1baf7a", "B3": "#eda100", "B3c": "#e87ba4", "C": "#008300"}
 FONT = "font-family='system-ui, -apple-system, Segoe UI, Malgun Gothic, sans-serif'"
 
 
@@ -61,18 +62,18 @@ def accuracy_svg(data):
 
 def difficulty_svg(data):
     """난이도별 정확도: 난이도 묶음마다 조건 4개 막대 (범례 + 표로 숫자 제공)"""
-    width, height, left, top, bottom = 760, 360, 56, 70, 50
+    width, height, left, top, bottom = 760, 380, 56, 90, 50
     plot_w, plot_h = width - left - 20, height - top - bottom
     group = plot_w / len(LEVELS)
-    bar, gap = 26, 2
+    bar, gap = 24, 2
     conds = list(data)
     out = [f"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 {width} {height}' width='{width}' height='{height}' {FONT}>",
            f"<rect width='100%' height='100%' fill='{SURFACE}'/>",
            f"<text x='16' y='28' font-size='16' font-weight='600' fill='{INK}'>Accuracy by question difficulty</text>"]
     for i, c in enumerate(conds):                                  # 범례 (한 줄, 그래프 위)
-        x = 16 + i * 180
-        out.append(f"<rect x='{x}' y='42' width='12' height='12' rx='3' fill='{SERIES[c]}'/>")
-        out.append(f"<text x='{x + 18}' y='52' font-size='12' fill='{INK}'>{NAMES[c]}</text>")
+        x, y = 16 + (i % 3) * 245, 42 + (i // 3) * 20              # 한 줄에 3개
+        out.append(f"<rect x='{x}' y='{y}' width='12' height='12' rx='3' fill='{SERIES[c]}'/>")
+        out.append(f"<text x='{x + 18}' y='{y + 10}' font-size='12' fill='{INK}'>{NAMES[c]}</text>")
     for tick in range(0, 101, 25):
         y = top + plot_h * (1 - tick / 100)
         out.append(f"<line x1='{left}' y1='{y}' x2='{width - 20}' y2='{y}' stroke='{GRID}' stroke-width='1'/>")
@@ -100,7 +101,9 @@ def main():
     lines = ["# 계산 방식 비교", "",
              f"- 계산 문제 28개(eval/calc_questions.jsonl) x {runs}회, 정답과 1% 이내면 맞음",
              "- A, B, B2에는 공식 6개에 필요한 규정 발췌문 15개를 모두 줬다 (검색 오류의 영향 제외)",
-             "- 거부 문제 4개: 값이 빠졌거나 적용 범위 밖이라 계산하면 안 되는 문제", "",
+             "- 거부 문제 4개: 값이 빠졌거나 적용 범위 밖이라 계산하면 안 되는 문제",
+             "- B, B2는 공식 표기를 고친(L_2, 곱셈 *) 2차 결과. 1차 결과(L2를 L의 제곱으로 읽는 오류 포함)는 results/archive/",
+             "- B3, B3c는 표·텍스트 결합 RAG: 발췌문이 언급한 표를 구조화된 표(tables.py)로 함께 준다", "",
              "| 조건 | 방식 | 전체 (회차 최저~최고) | easy | medium | hard | refuse | 근거 조항 정확 | 지어낸 값 | 오류 | 평균 시간(초) |",
              "|---|---|---|---|---|---|---|---|---|---|---|"]
     for c, s in data.items():

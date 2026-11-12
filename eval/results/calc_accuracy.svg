@@ -1,29 +1,37 @@
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 290' width='760' height='290' font-family='system-ui, -apple-system, Segoe UI, Malgun Gothic, sans-serif'>
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 382' width='760' height='382' font-family='system-ui, -apple-system, Segoe UI, Malgun Gothic, sans-serif'>
 <rect width='100%' height='100%' fill='#fcfcfb'/>
 <text x='16' y='28' font-size='16' font-weight='600' fill='#0b0b0b'>Calculation accuracy by method (28 questions x 3 runs)</text>
-<line x1='250.0' y1='58' x2='250.0' y2='256' stroke='#e4e3df' stroke-width='1'/>
-<text x='250.0' y='274' font-size='12' fill='#52514e' text-anchor='middle'>0%</text>
-<line x1='350.0' y1='58' x2='350.0' y2='256' stroke='#e4e3df' stroke-width='1'/>
-<text x='350.0' y='274' font-size='12' fill='#52514e' text-anchor='middle'>25%</text>
-<line x1='450.0' y1='58' x2='450.0' y2='256' stroke='#e4e3df' stroke-width='1'/>
-<text x='450.0' y='274' font-size='12' fill='#52514e' text-anchor='middle'>50%</text>
-<line x1='550.0' y1='58' x2='550.0' y2='256' stroke='#e4e3df' stroke-width='1'/>
-<text x='550.0' y='274' font-size='12' fill='#52514e' text-anchor='middle'>75%</text>
-<line x1='650.0' y1='58' x2='650.0' y2='256' stroke='#e4e3df' stroke-width='1'/>
-<text x='650.0' y='274' font-size='12' fill='#52514e' text-anchor='middle'>100%</text>
+<line x1='250.0' y1='58' x2='250.0' y2='348' stroke='#e4e3df' stroke-width='1'/>
+<text x='250.0' y='366' font-size='12' fill='#52514e' text-anchor='middle'>0%</text>
+<line x1='350.0' y1='58' x2='350.0' y2='348' stroke='#e4e3df' stroke-width='1'/>
+<text x='350.0' y='366' font-size='12' fill='#52514e' text-anchor='middle'>25%</text>
+<line x1='450.0' y1='58' x2='450.0' y2='348' stroke='#e4e3df' stroke-width='1'/>
+<text x='450.0' y='366' font-size='12' fill='#52514e' text-anchor='middle'>50%</text>
+<line x1='550.0' y1='58' x2='550.0' y2='348' stroke='#e4e3df' stroke-width='1'/>
+<text x='550.0' y='366' font-size='12' fill='#52514e' text-anchor='middle'>75%</text>
+<line x1='650.0' y1='58' x2='650.0' y2='348' stroke='#e4e3df' stroke-width='1'/>
+<text x='650.0' y='366' font-size='12' fill='#52514e' text-anchor='middle'>100%</text>
 <text x='238' y='85' font-size='13' fill='#0b0b0b' text-anchor='end'>A  LLM, chunk as stored</text>
 <path d='M250,72 h96.0 a4,4 0 0 1 4,4 v12 a4,4 0 0 1 -4,4 h-96.0 z' fill='#2a78d6'><title>A  LLM, chunk as stored: 25.0% (runs 25-25%)</title></path>
 <text x='360.0' y='86' font-size='13' fill='#0b0b0b'>25.0%</text>
 <text x='238' y='131' font-size='13' fill='#0b0b0b' text-anchor='end'>B  LLM, formula text added</text>
-<path d='M250,118 h105.52380952380952 a4,4 0 0 1 4,4 v12 a4,4 0 0 1 -4,4 h-105.52380952380952 z' fill='#2a78d6'><title>B  LLM, formula text added: 27.4% (runs 25-29%)</title></path>
-<line x1='350.0' y1='128' x2='364.2857142857143' y2='128' stroke='#0b0b0b' stroke-width='2'/>
-<text x='374.2857142857143' y='132' font-size='13' fill='#0b0b0b'>27.4%</text>
+<path d='M250,118 h96.0 a4,4 0 0 1 4,4 v12 a4,4 0 0 1 -4,4 h-96.0 z' fill='#2a78d6'><title>B  LLM, formula text added: 25.0% (runs 21-29%)</title></path>
+<line x1='335.7142857142857' y1='128' x2='364.2857142857143' y2='128' stroke='#0b0b0b' stroke-width='2'/>
+<text x='374.2857142857143' y='132' font-size='13' fill='#0b0b0b'>25.0%</text>
 <text x='238' y='177' font-size='13' fill='#0b0b0b' text-anchor='end'>B2 LLM writes Python</text>
-<path d='M250,164 h286.4761904761905 a4,4 0 0 1 4,4 v12 a4,4 0 0 1 -4,4 h-286.4761904761905 z' fill='#2a78d6'><title>B2 LLM writes Python: 72.6% (runs 71-75%)</title></path>
-<line x1='535.7142857142858' y1='174' x2='550.0' y2='174' stroke='#0b0b0b' stroke-width='2'/>
-<text x='560.0' y='178' font-size='13' fill='#0b0b0b'>72.6%</text>
-<text x='238' y='223' font-size='13' fill='#0b0b0b' text-anchor='end'>C  LLM picks, engine calculates</text>
-<path d='M250,210 h396.0 a4,4 0 0 1 4,4 v12 a4,4 0 0 1 -4,4 h-396.0 z' fill='#2a78d6'><title>C  LLM picks, engine calculates: 100.0% (runs 100-100%)</title></path>
-<text x='660.0' y='224' font-size='13' fill='#0b0b0b'>100.0%</text>
+<path d='M250,164 h286.4761904761905 a4,4 0 0 1 4,4 v12 a4,4 0 0 1 -4,4 h-286.4761904761905 z' fill='#2a78d6'><title>B2 LLM writes Python: 72.6% (runs 68-79%)</title></path>
+<line x1='521.4285714285714' y1='174' x2='564.2857142857142' y2='174' stroke='#0b0b0b' stroke-width='2'/>
+<text x='574.2857142857142' y='178' font-size='13' fill='#0b0b0b'>72.6%</text>
+<text x='238' y='223' font-size='13' fill='#0b0b0b' text-anchor='end'>B3 + structured tables</text>
+<path d='M250,210 h110.28571428571429 a4,4 0 0 1 4,4 v12 a4,4 0 0 1 -4,4 h-110.28571428571429 z' fill='#2a78d6'><title>B3 + structured tables: 28.6% (runs 25-32%)</title></path>
+<line x1='350.0' y1='220' x2='378.57142857142856' y2='220' stroke='#0b0b0b' stroke-width='2'/>
+<text x='388.57142857142856' y='224' font-size='13' fill='#0b0b0b'>28.6%</text>
+<text x='238' y='269' font-size='13' fill='#0b0b0b' text-anchor='end'>B3c + tables, LLM writes Python</text>
+<path d='M250,256 h329.33333333333326 a4,4 0 0 1 4,4 v12 a4,4 0 0 1 -4,4 h-329.33333333333326 z' fill='#2a78d6'><title>B3c + tables, LLM writes Python: 83.3% (runs 79-86%)</title></path>
+<line x1='564.2857142857142' y1='266' x2='592.8571428571429' y2='266' stroke='#0b0b0b' stroke-width='2'/>
+<text x='602.8571428571429' y='270' font-size='13' fill='#0b0b0b'>83.3%</text>
+<text x='238' y='315' font-size='13' fill='#0b0b0b' text-anchor='end'>C  LLM picks, engine calculates</text>
+<path d='M250,302 h396.0 a4,4 0 0 1 4,4 v12 a4,4 0 0 1 -4,4 h-396.0 z' fill='#2a78d6'><title>C  LLM picks, engine calculates: 100.0% (runs 100-100%)</title></path>
+<text x='660.0' y='316' font-size='13' fill='#0b0b0b'>100.0%</text>
 <text x='16' y='46' font-size='11' fill='#52514e'>Bar: mean of 3 runs. Black line: lowest to highest run.</text>
 </svg>
